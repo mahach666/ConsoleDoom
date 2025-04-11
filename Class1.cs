@@ -13,35 +13,45 @@ namespace RevitDoomNetPort
 {
     public static class Class1
     {
-        public static void Main()
+        public static void Main(string[] args)
         {
-            // Загружаем конфигурацию и ресурсы
-            var config = new Config();
-
-            var wad = new Wad("DOOM1.WAD");
-
-            //config.video_screenheight = 50;
-            //config.video_screenwidth = 100;
-            config.video_highresolution = false;
-
-            var args = new CommandLineArgs(new string[] { "-iwad", "DOOM1.WAD" }); // путь к WAD
-            var content = new GameContent( args);
-
-            // Создаём видео-вывод в консоль
-            //var video = new ConsoleVideo(config, content);
-            var video = new DrawScreen(wad, 256,144);
-
-            // Создаём Doom-движок
-            //var doom = new ManagedDoom.Doom(config, content, video);
-
-            var doom = new ManagedDoom.Doom(args, config, content, video, null, null, null);
-
-            // Игровой цикл (упрощённый)
-            while (true)
+            try
             {
-                video.Render(doom, new Fixed(30));
-                System.Threading.Thread.Sleep(33); // ~30 FPS
-                Console.Clear();
+                var cmdArgs = new CommandLineArgs(new[] { "-iwad", "DOOM1.WAD" });
+                var config = new Config();
+                config.video_highresolution = false;
+                var content = new GameContent(cmdArgs);
+
+                // Создаём Doom без Silk
+                var doom = new ManagedDoom.Doom(cmdArgs, config, content, null, null, null, null);
+
+                // Запускаем игру (например, E1M1)
+                doom.NewGame(GameSkill.Medium, 1, 1);
+
+                // Создаём рендерер напрямую
+                var renderer = new Renderer(config, content);
+                var width = renderer.Width;
+                var height = renderer.Height;
+                var buffer = new byte[4 * width * height]; // BGRA по 4 байта
+
+                // Несколько кадров фона
+                for (int frame = 0; frame < 1000000; frame++)
+                {
+                    doom.Update();
+
+                    // Заполняем буфер кадром
+                    renderer.Render(doom, buffer, Fixed.Zero);
+
+                    // <-- Поставь тут breakpoint и смотри buffer в отладчике
+
+                    System.Threading.Thread.Sleep(33);
+                }
+
+                Console.WriteLine("Рендер завершён. Проверь buffer в отладчике.");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Ошибка: " + e);
             }
         }
     }

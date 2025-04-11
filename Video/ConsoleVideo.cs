@@ -31,33 +31,20 @@ public sealed class ConsoleVideo : IVideo, IDisposable
 
         renderer.Render(doom, buffer, frameFrac);
 
-        Console.SetCursorPosition(0, 0);
-        //for (int y = 0; y < height; y++)
-        //{
-        //    for (int x = 0; x < width; x++)
-        //    {
-        //        int i = (y * width + x) ;
-        //        //byte b = buffer[i + 0];
-        //        //byte g = buffer[i + 1];
-        //        //byte r = buffer[i + 2];
-        //        //byte brightness = (byte)((r + g + b) / 3);
-        //        byte brightness = buffer[i];
-        //        Console.Write(ColorToChar(brightness));
-        //    }
-        //    Console.WriteLine();
-        //}
-        for (int y = 0; y < height; y += 2)
+        int scaleY = 4;
+        int scaleX = 2;
+
+        for (int y = 0; y < height; y += scaleY)
         {
-            for (int x = 0; x < width; x += 2)
+            for (int x = 0; x < width; x++)
             {
                 int i = y * width + x;
                 byte brightness = buffer[i];
-                Console.Write(ColorToChar(brightness));
+                char c = ColorToChar(brightness);
+                for (int s = 0; s < scaleX; s++) Console.Write(c); // выводим два раза
             }
             Console.WriteLine();
         }
-
-
     }
 
     private char ColorToChar(byte b)

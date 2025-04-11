@@ -107,6 +107,8 @@ namespace ManagedDoom.Video
                     doom.Game.Paused)
                 {
                     var scale = screen.Width / 320;
+                    //var scale = screen.Width / 160;
+
                     screen.DrawPatch(
                         pause,
                         (screen.Width - scale * pause.Width) / 2,
