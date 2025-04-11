@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RevitDoomNetPort.Doom.Math
+﻿namespace RevitDoomNetPort.Doom.Math
 {
     internal static class Utils
     {
