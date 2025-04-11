@@ -1,4 +1,5 @@
-﻿namespace RevitDoomNetPort.Doom.Math
+﻿
+namespace RevitDoomNetPort.Doom.Math
 {
     internal static class Utils
     {
@@ -22,5 +23,15 @@
             if (value > max) return max;
             return value;
         }
+
+        public static float RoundF(float value)
+        {
+            return (float)System.Math.Round(value);
+        }
+        public static float RoundF(float value, int digits)
+        {
+            return (float)System.Math.Round(value, digits);
+        }
+
     }
 }

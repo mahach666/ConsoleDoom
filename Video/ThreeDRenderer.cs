@@ -1,17 +1,4 @@
-﻿//
-// Copyright (C) 1993-1996 Id Software, Inc.
-// Copyright (C) 2019-2020 Nobuaki Tanaka
-//
-// This program is free software; you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation; either version 2 of the License, or
-// (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
+﻿
 
 
 
@@ -1320,7 +1307,7 @@ namespace ManagedDoom.Video
                 wallLightLevel++;
             }
 
-            var wallLights = scaleLight[Math.Clamp(wallLightLevel, 0, lightLevelCount - 1)];
+            var wallLights = scaleLight[RevitDoomNetPort.Doom.Math.Utils.Clamp(wallLightLevel, 0, lightLevelCount - 1)];
 
             //
             // Determine where on the screen the wall is drawn.
@@ -1341,7 +1328,7 @@ namespace ManagedDoom.Video
             //
 
             var planeLightLevel = (frontSector.LightLevel >> lightSegShift) + extraLight;
-            var planeLights = zLight[Math.Clamp(planeLightLevel, 0, lightLevelCount - 1)];
+            var planeLights = zLight[RevitDoomNetPort.Doom.Math.Utils.Clamp(planeLightLevel, 0, lightLevelCount - 1)];
 
             //
             // Prepare to record the rendering history.
@@ -1633,7 +1620,7 @@ namespace ManagedDoom.Video
                     wallLightLevel++;
                 }
 
-                wallLights = scaleLight[Math.Clamp(wallLightLevel, 0, lightLevelCount - 1)];
+                wallLights = scaleLight[RevitDoomNetPort.Doom.Math.Utils.Clamp(wallLightLevel, 0, lightLevelCount - 1)];
             }
 
             //
@@ -1691,7 +1678,7 @@ namespace ManagedDoom.Video
             //
 
             var planeLightLevel = (frontSector.LightLevel >> lightSegShift) + extraLight;
-            var planeLights = zLight[Math.Clamp(planeLightLevel, 0, lightLevelCount - 1)];
+            var planeLights = zLight[RevitDoomNetPort.Doom.Math.Utils.Clamp(planeLightLevel, 0, lightLevelCount - 1)];
 
             //
             // Prepare to record the rendering history.
@@ -1949,7 +1936,7 @@ namespace ManagedDoom.Video
                 wallLightLevel++;
             }
 
-            var wallLights = scaleLight[Math.Clamp(wallLightLevel, 0, lightLevelCount - 1)];
+            var wallLights = scaleLight[RevitDoomNetPort.Doom.Math.Utils.Clamp(wallLightLevel, 0, lightLevelCount - 1)];
 
             var wallTexture = textures[world.Specials.TextureTranslation[seg.SideDef.MiddleTexture]];
             var mask = wallTexture.Width - 1;
@@ -2463,7 +2450,7 @@ namespace ManagedDoom.Video
             sector.ValidCount = validCount;
 
             var spriteLightLevel = (sector.LightLevel >> lightSegShift) + extraLight;
-            var spriteLights = scaleLight[Math.Clamp(spriteLightLevel, 0, lightLevelCount - 1)];
+            var spriteLights = scaleLight[RevitDoomNetPort.Doom.Math.Utils.Clamp(spriteLightLevel, 0, lightLevelCount - 1)];
 
             // Handle all things in sector.
             foreach (var thing in sector)

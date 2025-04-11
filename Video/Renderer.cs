@@ -1,17 +1,4 @@
-﻿//
-// Copyright (C) 1993-1996 Id Software, Inc.
-// Copyright (C) 2019-2020 Nobuaki Tanaka
-//
-// This program is free software; you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation; either version 2 of the License, or
-// (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
+﻿
 
 
 
@@ -73,8 +60,8 @@ namespace ManagedDoom.Video
                 screen = new DrawScreen(content.Wad, 320, 200);
             }
 
-            config.video_gamescreensize = Math.Clamp(config.video_gamescreensize, 0, MaxWindowSize);
-            config.video_gammacorrection = Math.Clamp(config.video_gammacorrection, 0, MaxGammaCorrectionLevel);
+            config.video_gamescreensize = RevitDoomNetPort.Doom.Math.Utils.Clamp(config.video_gamescreensize, 0, MaxWindowSize);
+            config.video_gammacorrection = RevitDoomNetPort.Doom.Math.Utils.Clamp(config.video_gammacorrection, 0, MaxGammaCorrectionLevel);
 
             menu = new MenuRenderer(content.Wad, screen);
             threeD = new ThreeDRenderer(content, screen, config.video_gamescreensize);
@@ -230,7 +217,7 @@ namespace ManagedDoom.Video
                 var dy = (float)(y2 - y1) / wipeBandWidth;
                 for (var x = x1; x < x2; x++)
                 {
-                    var y = (int)MathF.Round(y1 + dy * ((x - x1) / 2 * 2));
+                    var y = (int)RevitDoomNetPort.Doom.Math.Utils.RoundF(y1 + dy * ((x - x1) / 2 * 2));
                     var copyLength = screen.Height - y;
                     if (copyLength > 0)
                     {

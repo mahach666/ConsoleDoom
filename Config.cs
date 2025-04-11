@@ -155,7 +155,9 @@ namespace ManagedDoom
                 var dic = new Dictionary<string, string>();
                 foreach (var line in File.ReadLines(path))
                 {
-                    var split = line.Split('=', StringSplitOptions.RemoveEmptyEntries);
+                    //var split = line.Split('=', StringSplitOptions.RemoveEmptyEntries);
+                    var split = line.Split(new char[] { '=' }, StringSplitOptions.RemoveEmptyEntries);
+
                     if (split.Length == 2)
                     {
                         dic[split[0].Trim()] = split[1].Trim();
