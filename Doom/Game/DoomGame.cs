@@ -479,11 +479,11 @@ namespace ManagedDoom
 
 		public void InitNew(GameSkill skill, int episode, int map)
 		{
-			options.Skill = (GameSkill)Math.Clamp((int)skill, (int)GameSkill.Baby, (int)GameSkill.Nightmare);
+			options.Skill = (GameSkill)RevitDoomNetPort.Doom.Math.Utils.Clamp((int)skill, (int)GameSkill.Baby, (int)GameSkill.Nightmare);
 
 			if (options.GameMode == GameMode.Retail)
 			{
-				options.Episode = Math.Clamp(episode, 1, 4);
+				options.Episode = RevitDoomNetPort.Doom.Math.Utils.Clamp(episode, 1, 4);
 			}
 			else if (options.GameMode == GameMode.Shareware)
 			{
@@ -491,16 +491,16 @@ namespace ManagedDoom
 			}
 			else
 			{
-				options.Episode = Math.Clamp(episode, 1, 4);
+				options.Episode = RevitDoomNetPort.Doom.Math.Utils.Clamp(episode, 1, 4);
 			}
 
 			if (options.GameMode == GameMode.Commercial)
 			{
-				options.Map = Math.Clamp(map, 1, 32);
+				options.Map = RevitDoomNetPort.Doom.Math.Utils.Clamp(map, 1, 32);
 			}
 			else
 			{
-				options.Map = Math.Clamp(map, 1, 9);
+				options.Map = RevitDoomNetPort.Doom.Math.Utils.Clamp(map, 1, 9);
 			}
 
 			options.Random.Clear();

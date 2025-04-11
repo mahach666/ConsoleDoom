@@ -12,7 +12,7 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-	    <LangVersion>10</LangVersion>
+    <LangVersion>10</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -150,6 +150,7 @@
     <Compile Include="Doom\Math\Geometry.cs" />
     <Compile Include="Doom\Math\Trig.cs" />
     <Compile Include="Doom\Math\Trig.Tables.cs" />
+    <Compile Include="Doom\Math\Utils.cs" />
     <Compile Include="Doom\Menu\DoomMenu.cs" />
     <Compile Include="Doom\Menu\HelpScreen.cs" />
     <Compile Include="Doom\Menu\LoadMenu.cs" />
