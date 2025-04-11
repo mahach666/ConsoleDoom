@@ -233,6 +233,7 @@
     <Compile Include="Doom\World\WeaponInfo.cs" />
     <Compile Include="Doom\World\WeaponType.cs" />
     <Compile Include="Doom\World\World.cs" />
+    <Compile Include="Extensions\DictionaryExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Silk\SilkConfigUtilities.cs" />
     <Compile Include="Silk\SilkDoom.cs" />
@@ -262,5 +263,6 @@
     <Compile Include="Video\ThreeDRenderer.cs" />
     <Compile Include="Video\WipeEffect.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

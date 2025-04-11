@@ -96,7 +96,7 @@ namespace ManagedDoom
             catch (Exception e)
             {
                 Console.WriteLine("Failed");
-                ExceptionDispatchInfo.Throw(e);
+                throw;
             }
         }
 
@@ -174,7 +174,7 @@ namespace ManagedDoom
             catch (Exception e)
             {
                 Console.WriteLine("Failed");
-                ExceptionDispatchInfo.Throw(e);
+                throw;
             }
         }
 
