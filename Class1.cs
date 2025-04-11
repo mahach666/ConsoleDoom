@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace RevitDoomNetPort
 {
-    public class Class1
+    public static class Class1
     {
+        public static void Main(string[] args)
+        {
+
+        }
+
     }
 }
