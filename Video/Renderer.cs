@@ -58,6 +58,7 @@ namespace ManagedDoom.Video
             else
             {
                 screen = new DrawScreen(content.Wad, 320, 200);
+                //screen = new DrawScreen(content.Wad, 160, 100);
             }
 
             config.video_gamescreensize = RevitDoomNetPort.Doom.Math.Utils.Clamp(config.video_gamescreensize, 0, MaxWindowSize);
@@ -74,6 +75,8 @@ namespace ManagedDoom.Video
             pause = Patch.FromWad(content.Wad, "M_PAUSE");
 
             var scale = screen.Width / 320;
+            //var scale = screen.Width / 160;
+
             wipeBandWidth = 2 * scale;
             wipeBandCount = screen.Width / wipeBandWidth + 1;
             wipeHeight = screen.Height / scale;

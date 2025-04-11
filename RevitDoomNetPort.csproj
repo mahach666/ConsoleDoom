@@ -267,6 +267,8 @@
     <Compile Include="UserInput\KeyBinding.cs" />
     <Compile Include="UserInput\NullUserInput.cs" />
     <Compile Include="Video\AutoMapRenderer.cs" />
+    <Compile Include="Video\ConsoleVideo.cs" />
+    <Compile Include="Video\ConsoleDrawScreen .cs" />
     <Compile Include="Video\DrawScreen.cs" />
     <Compile Include="Video\FinaleRenderer.cs" />
     <Compile Include="Video\IntermissionRenderer.cs" />

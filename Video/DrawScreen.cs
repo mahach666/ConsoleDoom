@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace ManagedDoom.Video
 {
-    public sealed class DrawScreen
+    public  class DrawScreen
     {
         private int width;
         private int height;
@@ -33,7 +33,36 @@ namespace ManagedDoom.Video
             }
         }
 
-        public void DrawPatch(Patch patch, int x, int y, int scale)
+
+        void PrintAscii(byte[] data, int width, int height)
+        {
+            Console.Clear();
+            for (int y = 0; y < height; y++)
+            {
+                for (int x = 0; x < width; x++)
+                {
+                    byte color = data[y * width + x];
+                    Console.Write(ColorToChar(color));
+                }
+                Console.WriteLine();
+            }
+        }
+
+        char ColorToChar(byte color)
+        {
+            // Простая яркость → символ
+            if (color >= 240) return '@';
+            if (color >= 200) return '#';
+            if (color >= 160) return 'O';
+            if (color >= 120) return '*';
+            if (color >= 80) return '+';
+            if (color >= 40) return '.';
+            return ' ';
+        }
+
+
+
+        public virtual void DrawPatch(Patch patch, int x, int y, int scale)
         {
             var drawX = x - scale * patch.LeftOffset;
             var drawY = y - scale * patch.TopOffset;
@@ -63,7 +92,7 @@ namespace ManagedDoom.Video
             }
         }
 
-        public void DrawPatchFlip(Patch patch, int x, int y, int scale)
+        public virtual void DrawPatchFlip(Patch patch, int x, int y, int scale)
         {
             var drawX = x - scale * patch.LeftOffset;
             var drawY = y - scale * patch.TopOffset;
@@ -94,7 +123,7 @@ namespace ManagedDoom.Video
             }
         }
 
-        private void DrawColumn(Column[] source, int x, int y, int scale)
+        private  void DrawColumn(Column[] source, int x, int y, int scale)
         {
             var step = Fixed.One / scale;
 
@@ -134,7 +163,7 @@ namespace ManagedDoom.Video
             }
         }
 
-        public void DrawText(IReadOnlyList<char> text, int x, int y, int scale)
+        public virtual void DrawText(IReadOnlyList<char> text, int x, int y, int scale)
         {
             var drawX = x;
             var drawY = y - 7 * scale;
@@ -169,7 +198,7 @@ namespace ManagedDoom.Video
             }
         }
 
-        public void DrawChar(char ch, int x, int y, int scale)
+        public virtual void DrawChar(char ch, int x, int y, int scale)
         {
             var drawX = x;
             var drawY = y - 7 * scale;
@@ -199,7 +228,7 @@ namespace ManagedDoom.Video
             DrawPatch(patch, drawX, drawY, scale);
         }
 
-        public void DrawText(string text, int x, int y, int scale)
+        public virtual void DrawText(string text, int x, int y, int scale)
         {
             var drawX = x;
             var drawY = y - 7 * scale;
@@ -234,7 +263,7 @@ namespace ManagedDoom.Video
             }
         }
 
-        public int MeasureChar(char ch, int scale)
+        public virtual int MeasureChar(char ch, int scale)
         {
             if (ch >= chars.Length)
             {
@@ -261,7 +290,7 @@ namespace ManagedDoom.Video
             return scale * patch.Width;
         }
 
-        public int MeasureText(IReadOnlyList<char> text, int scale)
+        public virtual int MeasureText(IReadOnlyList<char> text, int scale)
         {
             var width = 0;
 
@@ -296,7 +325,7 @@ namespace ManagedDoom.Video
             return width;
         }
 
-        public int MeasureText(string text, int scale)
+        public virtual int MeasureText(string text, int scale)
         {
             var width = 0;
 
@@ -331,7 +360,7 @@ namespace ManagedDoom.Video
             return width;
         }
 
-        public void FillRect(int x, int y, int w, int h, int color)
+        public virtual void FillRect(int x, int y, int w, int h, int color)
         {
             var x1 = x;
             var x2 = x + w;
@@ -383,7 +412,7 @@ namespace ManagedDoom.Video
             return code;
         }
 
-        public void DrawLine(float x1, float y1, float x2, float y2, int color)
+        public virtual void DrawLine(float x1, float y1, float x2, float y2, int color)
         {
             var outCode1 = ComputeOutCode(x1, y1);
             var outCode2 = ComputeOutCode(x2, y2);
