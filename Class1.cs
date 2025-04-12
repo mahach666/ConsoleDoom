@@ -38,17 +38,12 @@ namespace RevitDoomNetPort
                 for (int frame = 0; frame < 1000000; frame++)
                 {
                     Console.SetCursorPosition(0, 0);
-                    doom.Update();
-
+                  
+                        doom.Update();
+                        renderer.Render(doom, buffer, Fixed.Zero);
+                    
                     // Заполняем буфер кадром
-                    Console.WriteLine($"State: {doom.State}, Game: {doom.Game?.State}, World: {doom.Game?.World != null}");
-
-
-                    renderer.Render(doom, buffer, Fixed.One);
-
                     AnsiRenderer.PrintBGRAFast(buffer, width, height, 1);
-
-                    // <-- Поставь тут breakpoint и смотри buffer в отладчике
 
                     //System.Threading.Thread.Sleep(33);
                 }

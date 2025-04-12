@@ -37,6 +37,10 @@ public class ConsoleUserInput : IUserInput
             cmd.Buttons |= TicCmdButtons.Attack;
         if (IsKeyDown(ConsoleKey.F))
             cmd.Buttons |= TicCmdButtons.Use;
+        if (IsKeyDown(ConsoleKey.Escape))
+        {
+            cmd.Buttons |= TicCmdButtons.Pause;
+        }
 
         for (int i = 1; i <= 7; i++)
         {
@@ -56,8 +60,32 @@ public class ConsoleUserInput : IUserInput
 
     public int MaxMouseSensitivity => 15;
     public int MouseSensitivity { get => 5; set { } }
-}
 
+    public bool TryConvertKey(ConsoleKey key, out DoomKey doomKey)
+    {
+        switch (key)
+        {
+            case ConsoleKey.W: doomKey = DoomKey.W; return true;
+            case ConsoleKey.S: doomKey = DoomKey.S; return true;
+            case ConsoleKey.A: doomKey = DoomKey.A; return true;
+            case ConsoleKey.D: doomKey = DoomKey.D; return true;
+            case ConsoleKey.Spacebar: doomKey = DoomKey.Space; return true;
+            case ConsoleKey.F: doomKey = DoomKey.F; return true;
+            case ConsoleKey.Q: doomKey = DoomKey.Q; return true;
+            case ConsoleKey.E: doomKey = DoomKey.E; return true;
+            case ConsoleKey.D1: doomKey = DoomKey.Num1; return true;
+            case ConsoleKey.D2: doomKey = DoomKey.Num2; return true;
+            case ConsoleKey.D3: doomKey = DoomKey.Num3; return true;
+            case ConsoleKey.D4: doomKey = DoomKey.Num4; return true;
+            case ConsoleKey.D5: doomKey = DoomKey.Num5; return true;
+            case ConsoleKey.D6: doomKey = DoomKey.Num6; return true;
+            case ConsoleKey.D7: doomKey = DoomKey.Num7; return true;
+            default:
+                doomKey = DoomKey.Unknown;
+                return false;
+        }
+    }
+}
 
 //using System;
 //using System.Collections.Generic;
@@ -131,29 +159,7 @@ public class ConsoleUserInput : IUserInput
 //        }
 //    }
 
-//    private bool TryConvertKey(ConsoleKey key, out DoomKey doomKey)
-//    {
-//        switch (key)
-//        {
-//            case ConsoleKey.W: doomKey = DoomKey.W; return true;
-//            case ConsoleKey.S: doomKey = DoomKey.S; return true;
-//            case ConsoleKey.A: doomKey = DoomKey.A; return true;
-//            case ConsoleKey.D: doomKey = DoomKey.D; return true;
-//            case ConsoleKey.Spacebar: doomKey = DoomKey.Space; return true;
-//            case ConsoleKey.F: doomKey = DoomKey.F; return true;
-//            case ConsoleKey.Q: doomKey = DoomKey.Q; return true;
-//            case ConsoleKey.E: doomKey = DoomKey.E; return true;
-//            case ConsoleKey.D1: doomKey = DoomKey.Num1; return true;
-//            case ConsoleKey.D2: doomKey = DoomKey.Num2; return true;
-//            case ConsoleKey.D3: doomKey = DoomKey.Num3; return true;
-//            case ConsoleKey.D4: doomKey = DoomKey.Num4; return true;
-//            case ConsoleKey.D5: doomKey = DoomKey.Num5; return true;
-//            case ConsoleKey.D6: doomKey = DoomKey.Num6; return true;
-//            case ConsoleKey.D7: doomKey = DoomKey.Num7; return true;
-//            default:
-//                doomKey = DoomKey.Unknown;
-//                return false;
-//        }
+
 //    }
 
 //    public void Reset() => currentFrameKeys.Clear();
