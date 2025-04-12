@@ -35,6 +35,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
@@ -259,6 +262,7 @@
     <Compile Include="Silk\SilkSound.cs" />
     <Compile Include="Silk\SilkUserInput.cs" />
     <Compile Include="Silk\SilkVideo.cs" />
+    <Compile Include="UserInput\ConsoleUserInput.cs" />
     <Compile Include="UserInput\DoomKey.cs" />
     <Compile Include="UserInput\DoomKeyEx.cs" />
     <Compile Include="UserInput\DoomMouseButton.cs" />
@@ -266,6 +270,8 @@
     <Compile Include="UserInput\IUserInput.cs" />
     <Compile Include="UserInput\KeyBinding.cs" />
     <Compile Include="UserInput\NullUserInput.cs" />
+    <Compile Include="Utils\ConsoleHelper.cs" />
+    <Compile Include="Video\AnsiRenderer.cs" />
     <Compile Include="Video\AutoMapRenderer.cs" />
     <Compile Include="Video\ConsoleVideo.cs" />
     <Compile Include="Video\ConsoleDrawScreen .cs" />

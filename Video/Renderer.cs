@@ -30,6 +30,8 @@ namespace ManagedDoom.Video
 
         private DrawScreen screen;
 
+
+
         private MenuRenderer menu;
         private ThreeDRenderer threeD;
         private StatusBarRenderer statusBar;

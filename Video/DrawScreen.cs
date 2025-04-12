@@ -34,34 +34,6 @@ namespace ManagedDoom.Video
         }
 
 
-        void PrintAscii(byte[] data, int width, int height)
-        {
-            Console.Clear();
-            for (int y = 0; y < height; y++)
-            {
-                for (int x = 0; x < width; x++)
-                {
-                    byte color = data[y * width + x];
-                    Console.Write(ColorToChar(color));
-                }
-                Console.WriteLine();
-            }
-        }
-
-        char ColorToChar(byte color)
-        {
-            // Простая яркость → символ
-            if (color >= 240) return '@';
-            if (color >= 200) return '#';
-            if (color >= 160) return 'O';
-            if (color >= 120) return '*';
-            if (color >= 80) return '+';
-            if (color >= 40) return '.';
-            return ' ';
-        }
-
-
-
         public virtual void DrawPatch(Patch patch, int x, int y, int scale)
         {
             var drawX = x - scale * patch.LeftOffset;
