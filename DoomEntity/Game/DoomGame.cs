@@ -1,4 +1,5 @@
 ﻿using ConsoleDoom.DoomEntity.Event;
+using ConsoleDoom.DoomEntity.Info;
 using System;
 using System.IO;
 

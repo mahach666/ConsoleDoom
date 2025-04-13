@@ -1,12 +1,7 @@
-﻿
-
-
-
-using ConsoleDoom.DoomEntity.Common;
-using System;
+﻿using ConsoleDoom.DoomEntity.Common;
 using System.Collections.Generic;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Info
 {
     public static partial class DoomInfo
     {

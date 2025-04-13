@@ -1,10 +1,6 @@
-﻿
+﻿using System;
 
-
-
-using System;
-
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Info
 {
     public static partial class DoomInfo
     {

@@ -1,6 +1,7 @@
 ﻿using ConsoleDoom.DoomEntity.Common;
 using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Graphics;
+using ConsoleDoom.DoomEntity.Info;
 using System;
 using System.IO;
 

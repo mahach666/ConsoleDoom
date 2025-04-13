@@ -1,11 +1,6 @@
-﻿
+﻿using System.Collections.Generic;
 
-
-
-using System;
-using System.Collections.Generic;
-
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Info
 {
     public static partial class DoomInfo
     {

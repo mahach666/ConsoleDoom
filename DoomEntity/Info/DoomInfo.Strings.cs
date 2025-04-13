@@ -1,6 +1,6 @@
 ﻿using ConsoleDoom.DoomEntity.Common;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Info
 {
     public static partial class DoomInfo
     {

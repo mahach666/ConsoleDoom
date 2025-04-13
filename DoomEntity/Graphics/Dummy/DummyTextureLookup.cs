@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleDoom.DoomEntity.Info;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
