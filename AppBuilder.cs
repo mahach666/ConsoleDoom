@@ -1,11 +1,10 @@
-﻿using ManagedDoom;
-using ManagedDoom.Video;
-using RevitDoomNetPort.Utils;
-using RevitDoomNetPort.Video;
+﻿using ConsoleDoom.Utils;
+using ConsoleDoom.Video;
+using ConsoleDoom.DoomEntity;
 using System;
 using System.Linq;
 
-namespace RevitDoomNetPort
+namespace ConsoleDoom
 {
     public class AppBuilder
     {
@@ -50,10 +49,10 @@ namespace RevitDoomNetPort
                 var content = new GameContent(cmdArgs);
 
                 ConsoleUserInput input = null;
-                ManagedDoom.Doom doom = null;
+                Doom doom = null;
 
                 input = new ConsoleUserInput(config, e => doom?.PostEvent(e));
-                doom = new ManagedDoom.Doom(cmdArgs, config, content, null, null, null, input);
+                doom = new Doom(cmdArgs, config, content, null, null, null, input);
 
                 var renderer = new Renderer(config, content);
 

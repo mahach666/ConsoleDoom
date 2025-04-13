@@ -1,10 +1,6 @@
-﻿
+﻿using ConsoleDoom.DoomEntity;
 
-
-
-using System;
-
-namespace ManagedDoom.Video
+namespace ConsoleDoom.Video
 {
     public interface IVideo
     {

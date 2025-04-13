@@ -1,7 +1,7 @@
 ﻿using System;
-using ManagedDoom.Video;
+using ConsoleDoom.Video;
 
-namespace ManagedDoom.ConsoleVideo
+namespace ConsoleDoom.ConsoleVideo
 {
     public class ConsoleDrawScreen : DrawScreen
     {

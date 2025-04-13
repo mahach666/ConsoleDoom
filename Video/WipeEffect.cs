@@ -3,7 +3,7 @@
 
 using System;
 
-namespace ManagedDoom.Video
+namespace ConsoleDoom.Video
 {
     public sealed class WipeEffect
     {

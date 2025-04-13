@@ -1,4 +1,6 @@
-﻿namespace ManagedDoom.Video
+﻿using ConsoleDoom.DoomEntity;
+
+namespace ConsoleDoom.Video
 {
     public class NullVideo : IVideo
     {

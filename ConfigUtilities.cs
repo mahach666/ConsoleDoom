@@ -21,7 +21,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 
-namespace ManagedDoom
+namespace ConsoleDoom
 {
     public static class ConfigUtilities
     {

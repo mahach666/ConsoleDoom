@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Security.Policy;
-using ManagedDoom;
-using ManagedDoom.UserInput;
+using ConsoleDoom;
+using ConsoleDoom.UserInput;
 
 public class ConsoleUserInput : IUserInput
 {

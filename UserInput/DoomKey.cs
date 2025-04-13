@@ -1,4 +1,4 @@
-﻿namespace ManagedDoom
+﻿namespace ConsoleDoom
 {
     public enum DoomKey
     {

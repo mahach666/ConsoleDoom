@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ManagedDoom.Video
+namespace ConsoleDoom.Video
 {
     public  class DrawScreen
     {
@@ -447,10 +447,10 @@ namespace ManagedDoom.Video
 
             if (accept)
             {
-                var bx1 = RevitDoomNetPort.Doom.Math.Utils.Clamp((int)x1, 0, width - 1);
-                var by1 = RevitDoomNetPort.Doom.Math.Utils.Clamp((int)y1, 0, height - 1);
-                var bx2 = RevitDoomNetPort.Doom.Math.Utils.Clamp((int)x2, 0, width - 1);
-                var by2 = RevitDoomNetPort.Doom.Math.Utils.Clamp((int)y2, 0, height - 1);
+                var bx1 = ConsoleDoom.DoomEntity.Math.Utils.Clamp((int)x1, 0, width - 1);
+                var by1 = ConsoleDoom.DoomEntity.Math.Utils.Clamp((int)y1, 0, height - 1);
+                var bx2 = ConsoleDoom.DoomEntity.Math.Utils.Clamp((int)x2, 0, width - 1);
+                var by2 = ConsoleDoom.DoomEntity.Math.Utils.Clamp((int)y2, 0, height - 1);
                 Bresenham(bx1, by1, bx2, by2, color);
             }
         }

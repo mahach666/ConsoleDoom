@@ -1,4 +1,4 @@
-﻿namespace ManagedDoom.Video
+﻿namespace ConsoleDoom.Video
 {
     public class OpeningSequenceRenderer
     {

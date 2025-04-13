@@ -1,10 +1,4 @@
-﻿
-
-
-
-using System;
-
-namespace ManagedDoom
+﻿namespace ConsoleDoom
 {
     public static class ApplicationInfo
     {

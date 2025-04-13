@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RevitDoomNetPort.Utils
+namespace ConsoleDoom.Utils
 {
     public static class ConsoleHelper
     {

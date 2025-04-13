@@ -17,7 +17,7 @@
 
 using System;
 
-namespace ManagedDoom.Audio
+namespace ConsoleDoom.Audio
 {
     public interface ISound
     {

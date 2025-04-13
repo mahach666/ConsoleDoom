@@ -1,4 +1,4 @@
-﻿namespace RevitDoomNetPort
+﻿namespace ConsoleDoom
 {
     public static class App
     {

@@ -17,7 +17,7 @@
 
 using System;
 
-namespace ManagedDoom.UserInput
+namespace ConsoleDoom.UserInput
 {
     public sealed class NullUserInput : IUserInput
     {

@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ManagedDoom.Video
+namespace ConsoleDoom.Video
 {
     public sealed class IntermissionRenderer
     {
