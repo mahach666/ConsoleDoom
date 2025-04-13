@@ -1,7 +1,7 @@
 ﻿using ConsoleDoom.DoomEntity.Event;
 using ConsoleDoom.DoomEntity.Game;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Menu
 {
     public sealed class HelpScreen : MenuDef
     {

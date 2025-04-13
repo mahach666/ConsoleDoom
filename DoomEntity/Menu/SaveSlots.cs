@@ -1,7 +1,7 @@
 ﻿using ConsoleDoom.DoomEntity.Common;
 using System.IO;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Menu
 {
     public sealed class SaveSlots
     {

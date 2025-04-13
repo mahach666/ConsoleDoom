@@ -1,12 +1,8 @@
-﻿
-
-
-
-using ConsoleDoom.DoomEntity.Event;
+﻿using ConsoleDoom.DoomEntity.Event;
 using System;
 using System.Collections.Generic;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Menu
 {
     public sealed class PressAnyKey : MenuDef
     {

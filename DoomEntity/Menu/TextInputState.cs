@@ -1,4 +1,4 @@
-﻿namespace ConsoleDoom
+﻿namespace ConsoleDoom.DoomEntity.Menu
 {
     public enum TextInputState
     {

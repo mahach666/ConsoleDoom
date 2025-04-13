@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Menu
 {
     public sealed class TextInput
     {

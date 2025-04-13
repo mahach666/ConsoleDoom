@@ -6,7 +6,7 @@ using ConsoleDoom.DoomEntity.Info;
 using System;
 using System.Collections.Generic;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Menu
 {
     public sealed class QuitConfirm : MenuDef
     {

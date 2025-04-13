@@ -1,7 +1,7 @@
 ﻿using ConsoleDoom.DoomEntity.Event;
 using System.Collections.Generic;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Menu
 {
     public sealed class LoadMenu : MenuDef
     {

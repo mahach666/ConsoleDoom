@@ -1,6 +1,6 @@
 ﻿using ConsoleDoom.DoomEntity.Event;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Menu
 {
     public abstract class MenuDef
     {

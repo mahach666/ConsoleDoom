@@ -1,11 +1,7 @@
-﻿
-
-
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Menu
 {
     public class TextBoxMenuItem : MenuItem
     {

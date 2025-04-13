@@ -4,7 +4,7 @@ using ConsoleDoom.DoomEntity.Game;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Menu
 {
     public sealed class SaveMenu : MenuDef
     {
