@@ -1,5 +1,7 @@
 ﻿using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.DoomEntity.Opening;
+using ConsoleDoom.DoomEntity.Wad;
 
 namespace ConsoleDoom.Video
 {
@@ -10,7 +12,7 @@ namespace ConsoleDoom.Video
 
         private PatchCache cache;
 
-        public OpeningSequenceRenderer(Wad wad, DrawScreen screen, Renderer parent)
+        public OpeningSequenceRenderer(WadObj wad, DrawScreen screen, Renderer parent)
         {
             this.screen = screen;
             this.parent = parent;

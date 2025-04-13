@@ -1,4 +1,5 @@
 ﻿using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 
 namespace ConsoleDoom.DoomEntity.Map
@@ -103,7 +104,7 @@ namespace ConsoleDoom.DoomEntity.Map
                 side1Number != -1 ? sides[side1Number] : null);
         }
 
-        public static LineDef[] FromWad(Wad wad, int lump, Vertex[] vertices, SideDef[] sides)
+        public static LineDef[] FromWad(WadObj wad, int lump, Vertex[] vertices, SideDef[] sides)
         {
             var length = wad.GetLumpSize(lump);
             if (length % dataSize != 0)

@@ -1,6 +1,7 @@
 ﻿using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Info;
+using ConsoleDoom.DoomEntity.Wad;
 
 namespace ConsoleDoom.Video
 {
@@ -98,7 +99,7 @@ namespace ConsoleDoom.Video
 
         private MultIconWidget[] keys;
 
-        public StatusBarRenderer(Wad wad, DrawScreen screen)
+        public StatusBarRenderer(WadObj wad, DrawScreen screen)
         {
             this.screen = screen;
 
@@ -407,7 +408,7 @@ namespace ConsoleDoom.Video
             public Patch[] FaceBackground;
             public Patch[] Faces;
 
-            public Patches(Wad wad)
+            public Patches(WadObj wad)
             {
                 Background = Patch.FromWad(wad, "STBAR");
 

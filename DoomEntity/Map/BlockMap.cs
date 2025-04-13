@@ -1,4 +1,5 @@
 ﻿using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 
 namespace ConsoleDoom.DoomEntity.Map
@@ -41,7 +42,7 @@ namespace ConsoleDoom.DoomEntity.Map
             thingLists = new Mobj[width * height];
         }
 
-        public static BlockMap FromWad(Wad wad, int lump, LineDef[] lines)
+        public static BlockMap FromWad(WadObj wad, int lump, LineDef[] lines)
         {
             var data = wad.ReadLump(lump);
 

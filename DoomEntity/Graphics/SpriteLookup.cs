@@ -1,4 +1,5 @@
 ﻿using ConsoleDoom.DoomEntity.Info;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 using System.Collections.Generic;
 
@@ -8,7 +9,7 @@ namespace ConsoleDoom.DoomEntity.Graphics
     {
         private SpriteDef[] spriteDefs;
 
-        public SpriteLookup(Wad wad)
+        public SpriteLookup(WadObj wad)
         {
             try
             {
@@ -121,7 +122,7 @@ namespace ConsoleDoom.DoomEntity.Graphics
             }
         }
 
-        private static IEnumerable<int> EnumerateSprites(Wad wad)
+        private static IEnumerable<int> EnumerateSprites(WadObj wad)
         {
             var spriteSection = false;
 
@@ -153,7 +154,7 @@ namespace ConsoleDoom.DoomEntity.Graphics
             }
         }
 
-        private static Patch CachedRead(int lump, Wad wad, Dictionary<int, Patch> cache)
+        private static Patch CachedRead(int lump, WadObj wad, Dictionary<int, Patch> cache)
         {
             if (!cache.ContainsKey(lump))
             {

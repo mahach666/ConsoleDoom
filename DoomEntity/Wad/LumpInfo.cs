@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Wad
 {
     public sealed class LumpInfo
     {

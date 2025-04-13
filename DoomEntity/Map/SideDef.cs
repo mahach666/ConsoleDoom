@@ -1,6 +1,7 @@
 ﻿using ConsoleDoom.DoomEntity.Common;
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 
 namespace ConsoleDoom.DoomEntity.Map
@@ -50,7 +51,7 @@ namespace ConsoleDoom.DoomEntity.Map
                 sectorNum != -1 ? sectors[sectorNum] : null);
         }
 
-        public static SideDef[] FromWad(Wad wad, int lump, ITextureLookup textures, Sector[] sectors)
+        public static SideDef[] FromWad(WadObj wad, int lump, ITextureLookup textures, Sector[] sectors)
         {
             var length = wad.GetLumpSize(lump);
             if (length % dataSize != 0)

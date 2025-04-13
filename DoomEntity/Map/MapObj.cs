@@ -2,6 +2,7 @@
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 using System.Collections.Generic;
 
@@ -35,7 +36,7 @@ namespace ConsoleDoom.DoomEntity.Map
         {
         }
 
-        public MapObj(Wad wad, ITextureLookup textures, IFlatLookup flats, TextureAnimation animation, World world)
+        public MapObj(WadObj wad, ITextureLookup textures, IFlatLookup flats, TextureAnimation animation, World world)
         {
             try
             {

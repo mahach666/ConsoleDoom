@@ -1,13 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using ConsoleDoom.DoomEntity.Wad;
+using System.Collections.Generic;
 
 namespace ConsoleDoom.DoomEntity.Graphics
 {
     public sealed class PatchCache
     {
-        private Wad wad;
+        private WadObj wad;
         private Dictionary<string, Patch> cache;
 
-        public PatchCache(Wad wad)
+        public PatchCache(WadObj wad)
         {
             this.wad = wad;
 

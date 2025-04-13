@@ -192,7 +192,7 @@
     <Compile Include="DoomEntity\Opening\OpeningSequence.cs" />
     <Compile Include="DoomEntity\Opening\OpeningSequenceState.cs" />
     <Compile Include="DoomEntity\Wad\LumpInfo.cs" />
-    <Compile Include="DoomEntity\Wad\Wad.cs" />
+    <Compile Include="DoomEntity\Wad\WadObj.cs" />
     <Compile Include="DoomEntity\World\AmmoType.cs" />
     <Compile Include="DoomEntity\World\AutoMap.cs" />
     <Compile Include="DoomEntity\World\AutoMapState.cs" />

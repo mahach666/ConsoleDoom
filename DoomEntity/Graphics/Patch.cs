@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleDoom.DoomEntity.Wad;
+using System;
 using System.Collections.Generic;
 
 namespace ConsoleDoom.DoomEntity.Graphics
@@ -66,7 +67,7 @@ namespace ConsoleDoom.DoomEntity.Graphics
                 columns);
         }
 
-        public static Patch FromWad(Wad wad, string name)
+        public static Patch FromWad(WadObj wad, string name)
         {
             return FromData(name, wad.ReadLump(name));
         }

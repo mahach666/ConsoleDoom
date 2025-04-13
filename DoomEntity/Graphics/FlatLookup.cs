@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleDoom.DoomEntity.Wad;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -14,7 +15,7 @@ namespace ConsoleDoom.DoomEntity.Graphics
         private int skyFlatNumber;
         private Flat skyFlat;
 
-        public FlatLookup(Wad wad)
+        public FlatLookup(WadObj wad)
         {
             var fStartCount = CountLump(wad, "F_START");
             var fEndCount = CountLump(wad, "F_END");
@@ -53,7 +54,7 @@ namespace ConsoleDoom.DoomEntity.Graphics
             }
         }
 
-        private void InitStandard(Wad wad)
+        private void InitStandard(WadObj wad)
         {
             try
             {
@@ -96,7 +97,7 @@ namespace ConsoleDoom.DoomEntity.Graphics
             }
         }
 
-        private void InitDeuTexMerge(Wad wad)
+        private void InitDeuTexMerge(WadObj wad)
         {
             try
             {
@@ -196,7 +197,7 @@ namespace ConsoleDoom.DoomEntity.Graphics
             return flats.GetEnumerator();
         }
 
-        private static int CountLump(Wad wad, string name)
+        private static int CountLump(WadObj wad, string name)
         {
             var count = 0;
             foreach (var lump in wad.LumpInfos)

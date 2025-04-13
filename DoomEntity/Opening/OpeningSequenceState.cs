@@ -1,4 +1,4 @@
-﻿namespace ConsoleDoom
+﻿namespace ConsoleDoom.DoomEntity.Opening
 {
     public enum OpeningSequenceState
     {

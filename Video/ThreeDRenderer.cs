@@ -2,6 +2,7 @@
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 using System.Collections.Generic;
 
@@ -603,7 +604,7 @@ namespace ConsoleDoom.Video
         private Patch borderRight;
         private Flat backFlat;
 
-        private void InitWindowBorder(Wad wad)
+        private void InitWindowBorder(WadObj wad)
         {
             borderTopLeft = Patch.FromWad(wad, "BRDR_TL");
             borderTopRight = Patch.FromWad(wad, "BRDR_TR");

@@ -1,6 +1,7 @@
 ﻿using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Menu;
+using ConsoleDoom.DoomEntity.Wad;
 using System.Collections.Generic;
 
 namespace ConsoleDoom.Video
@@ -9,12 +10,12 @@ namespace ConsoleDoom.Video
     {
         private static readonly char[] cursor = { '_' };
 
-        private Wad wad;
+        private WadObj wad;
         private DrawScreen screen;
 
         private PatchCache cache;
 
-        public MenuRenderer(Wad wad, DrawScreen screen)
+        public MenuRenderer(WadObj wad, DrawScreen screen)
         {
             this.wad = wad;
             this.screen = screen;

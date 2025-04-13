@@ -5,6 +5,7 @@
 using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Intermission;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 using System.Collections.Generic;
 
@@ -80,7 +81,7 @@ namespace ConsoleDoom.Video
         }
 
 
-        private Wad wad;
+        private WadObj wad;
         private DrawScreen screen;      
 
         private PatchCache cache;
@@ -92,7 +93,7 @@ namespace ConsoleDoom.Video
 
         private int scale;
 
-        public IntermissionRenderer(Wad wad, DrawScreen screen)
+        public IntermissionRenderer(WadObj wad, DrawScreen screen)
         {
             this.wad = wad;
             this.screen = screen;

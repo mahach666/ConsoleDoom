@@ -3,6 +3,7 @@ using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.DoomEntity.Opening;
 using System;
 using System.Runtime.InteropServices;
 

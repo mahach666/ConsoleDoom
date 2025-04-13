@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Wad
 {
-    public sealed class Wad : IDisposable
+    public sealed class WadObj : IDisposable
     {
         private List<string> names;
         private List<Stream> streams;
@@ -16,7 +16,7 @@ namespace ConsoleDoom
         private GameMode gameMode;
         private MissionPack missionPack;
 
-        public Wad(params string[] fileNames)
+        public WadObj(params string[] fileNames)
         {
             try
             {

@@ -1,5 +1,6 @@
 ﻿using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 using System.Collections.Generic;
 
@@ -13,7 +14,7 @@ namespace ConsoleDoom.Video
 
         private Patch[] chars;
 
-        public DrawScreen(Wad wad, int width, int height)
+        public DrawScreen(WadObj wad, int width, int height)
         {
             this.width = width;
             this.height = height;

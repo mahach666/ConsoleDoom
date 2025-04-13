@@ -1,12 +1,13 @@
 ﻿using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Graphics.Dummy;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 
 namespace ConsoleDoom.DoomEntity.Game
 {
     public sealed class GameContent : IDisposable
     {
-        private Wad wad;
+        private WadObj wad;
         private Palette palette;
         private ColorMap colorMap;
         private ITextureLookup textures;
@@ -20,7 +21,7 @@ namespace ConsoleDoom.DoomEntity.Game
 
         public GameContent(CommandLineArgs args)
         {
-            wad = new Wad(ConfigUtilities.GetWadPaths(args));
+            wad = new WadObj(ConfigUtilities.GetWadPaths(args));
 
             DeHackEd.Initialize(args, wad);
 
@@ -36,7 +37,7 @@ namespace ConsoleDoom.DoomEntity.Game
         {
             var gc = new GameContent();
 
-            gc.wad = new Wad(wadPaths);
+            gc.wad = new WadObj(wadPaths);
             gc.palette = new Palette(gc.wad);
             gc.colorMap = new ColorMap(gc.wad);
             gc.textures = new DummyTextureLookup(gc.wad);
@@ -56,7 +57,7 @@ namespace ConsoleDoom.DoomEntity.Game
             }
         }
 
-        public Wad Wad => wad;
+        public WadObj Wad => wad;
         public Palette Palette => palette;
         public ColorMap ColorMap => colorMap;
         public ITextureLookup Textures => textures;

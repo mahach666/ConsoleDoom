@@ -1,4 +1,5 @@
 ﻿using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 
 namespace ConsoleDoom.DoomEntity.Map
@@ -24,7 +25,7 @@ namespace ConsoleDoom.DoomEntity.Map
             return new Vertex(Fixed.FromInt(x), Fixed.FromInt(y));
         }
 
-        public static Vertex[] FromWad(Wad wad, int lump)
+        public static Vertex[] FromWad(WadObj wad, int lump)
         {
             var length = wad.GetLumpSize(lump);
             if (length % dataSize != 0)

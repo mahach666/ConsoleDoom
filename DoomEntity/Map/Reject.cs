@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleDoom.DoomEntity.Wad;
+using System;
 
 namespace ConsoleDoom.DoomEntity.Map
 {
@@ -21,7 +22,7 @@ namespace ConsoleDoom.DoomEntity.Map
             this.sectorCount = sectorCount;
         }
 
-        public static Reject FromWad(Wad wad, int lump, Sector[] sectors)
+        public static Reject FromWad(WadObj wad, int lump, Sector[] sectors)
         {
             return new Reject(wad.ReadLump(lump), sectors.Length);
         }

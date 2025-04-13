@@ -1,5 +1,6 @@
 ﻿using ConsoleDoom.DoomEntity.Common;
 using ConsoleDoom.DoomEntity.Info;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -14,17 +15,17 @@ namespace ConsoleDoom.DoomEntity.Graphics
 
         private int[] switchList;
 
-        public TextureLookup(Wad wad) : this(wad, false)
+        public TextureLookup(WadObj wad) : this(wad, false)
         {
         }
 
-        public TextureLookup(Wad wad, bool useDummy)
+        public TextureLookup(WadObj wad, bool useDummy)
         {
             InitLookup(wad);
             InitSwitchList();
         }
 
-        private void InitLookup(Wad wad)
+        private void InitLookup(WadObj wad)
         {
             textures = new List<Texture>();
             nameToTexture = new Dictionary<string, Texture>();
@@ -87,7 +88,7 @@ namespace ConsoleDoom.DoomEntity.Graphics
             }
         }
 
-        private static Patch[] LoadPatches(Wad wad)
+        private static Patch[] LoadPatches(WadObj wad)
         {
             var patchNames = LoadPatchNames(wad);
             var patches = new Patch[patchNames.Length];
@@ -107,7 +108,7 @@ namespace ConsoleDoom.DoomEntity.Graphics
             return patches;
         }
 
-        private static string[] LoadPatchNames(Wad wad)
+        private static string[] LoadPatchNames(WadObj wad)
         {
             var data = wad.ReadLump("PNAMES");
             var count = BitConverter.ToInt32(data, 0);

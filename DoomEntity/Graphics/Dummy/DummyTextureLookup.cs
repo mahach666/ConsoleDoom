@@ -1,4 +1,5 @@
 ﻿using ConsoleDoom.DoomEntity.Info;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,13 +14,13 @@ namespace ConsoleDoom.DoomEntity.Graphics.Dummy
 
         private int[] switchList;
 
-        public DummyTextureLookup(Wad wad)
+        public DummyTextureLookup(WadObj wad)
         {
             InitLookup(wad);
             InitSwitchList();
         }
 
-        private void InitLookup(Wad wad)
+        private void InitLookup(WadObj wad)
         {
             textures = new List<Texture>();
             nameToTexture = new Dictionary<string, Texture>();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleDoom.DoomEntity.Wad;
+using System;
 
 namespace ConsoleDoom.DoomEntity.Graphics
 {
@@ -8,7 +9,7 @@ namespace ConsoleDoom.DoomEntity.Graphics
 
         private byte[][] data;
 
-        public ColorMap(Wad wad)
+        public ColorMap(WadObj wad)
         {
             try
             {

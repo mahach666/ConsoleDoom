@@ -2,12 +2,13 @@
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Intermission;
 using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.DoomEntity.Wad;
 
 namespace ConsoleDoom.Video
 {
     public sealed class FinaleRenderer
     {
-        private Wad wad;
+        private WadObj wad;
         private IFlatLookup flats;
         private ISpriteLookup sprites;
 

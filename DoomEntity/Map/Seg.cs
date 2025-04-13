@@ -1,4 +1,5 @@
 ﻿using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 
 namespace ConsoleDoom.DoomEntity.Map
@@ -60,7 +61,7 @@ namespace ConsoleDoom.DoomEntity.Map
                 (lineDef.Flags & LineFlags.TwoSided) != 0 ? backSide?.Sector : null);
         }
 
-        public static Seg[] FromWad(Wad wad, int lump, Vertex[] vertices, LineDef[] lines)
+        public static Seg[] FromWad(WadObj wad, int lump, Vertex[] vertices, LineDef[] lines)
         {
             var length = wad.GetLumpSize(lump);
             if (length % Seg.dataSize != 0)

@@ -1,4 +1,5 @@
 ﻿using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 
 namespace ConsoleDoom.DoomEntity.Map
@@ -50,7 +51,7 @@ namespace ConsoleDoom.DoomEntity.Map
                 (ThingFlags)flags);
         }
 
-        public static MapThing[] FromWad(Wad wad, int lump)
+        public static MapThing[] FromWad(WadObj wad, int lump)
         {
             var length = wad.GetLumpSize(lump);
             if (length % dataSize != 0)

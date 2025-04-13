@@ -3,6 +3,7 @@ using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 
 namespace ConsoleDoom.Video
@@ -93,7 +94,7 @@ namespace ConsoleDoom.Video
 
         private Patch[] markNumbers;
 
-        public AutoMapRenderer(Wad wad, DrawScreen screen)
+        public AutoMapRenderer(WadObj wad, DrawScreen screen)
         {
             this.screen = screen;
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleDoom.DoomEntity.Wad;
+using System;
 
 namespace ConsoleDoom.DoomEntity.Map
 {
@@ -28,7 +29,7 @@ namespace ConsoleDoom.DoomEntity.Map
                 firstSegNumber);
         }
 
-        public static Subsector[] FromWad(Wad wad, int lump, Seg[] segs)
+        public static Subsector[] FromWad(WadObj wad, int lump, Seg[] segs)
         {
             var length = wad.GetLumpSize(lump);
             if (length % Subsector.dataSize != 0)

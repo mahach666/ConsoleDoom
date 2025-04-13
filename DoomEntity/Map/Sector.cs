@@ -1,6 +1,7 @@
 ﻿using ConsoleDoom.DoomEntity.Common;
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -91,7 +92,7 @@ namespace ConsoleDoom.DoomEntity.Map
                 tag);
         }
 
-        public static Sector[] FromWad(Wad wad, int lump, IFlatLookup flats)
+        public static Sector[] FromWad(WadObj wad, int lump, IFlatLookup flats)
         {
             var length = wad.GetLumpSize(lump);
             if (length % dataSize != 0)

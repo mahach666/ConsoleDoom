@@ -7,6 +7,7 @@ using ConsoleDoom.DoomEntity.Event;
 using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.Menu;
+using ConsoleDoom.DoomEntity.Opening;
 
 namespace ConsoleDoom.DoomEntity
 {

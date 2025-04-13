@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using ConsoleDoom.DoomEntity.Wad;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace ConsoleDoom.DoomEntity.Graphics.Dummy
@@ -13,7 +14,7 @@ namespace ConsoleDoom.DoomEntity.Graphics.Dummy
         private int skyFlatNumber;
         private Flat skyFlat;
 
-        public DummyFlatLookup(Wad wad)
+        public DummyFlatLookup(WadObj wad)
         {
             var firstFlat = wad.GetLumpNumber("F_START") + 1;
             var lastFlat = wad.GetLumpNumber("F_END") - 1;

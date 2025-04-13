@@ -1,4 +1,5 @@
 ﻿using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 
 namespace ConsoleDoom.DoomEntity.Map
@@ -100,7 +101,7 @@ namespace ConsoleDoom.DoomEntity.Map
                 backChild);
         }
 
-        public static Node[] FromWad(Wad wad, int lump, Subsector[] subsectors)
+        public static Node[] FromWad(WadObj wad, int lump, Subsector[] subsectors)
         {
             var length = wad.GetLumpSize(lump);
             if (length % Node.dataSize != 0)

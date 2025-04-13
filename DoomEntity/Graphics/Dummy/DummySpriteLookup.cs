@@ -1,4 +1,5 @@
 ﻿using ConsoleDoom.DoomEntity.Info;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 using System.Collections.Generic;
 
@@ -8,7 +9,7 @@ namespace ConsoleDoom.DoomEntity.Graphics.Dummy
     {
         private SpriteDef[] spriteDefs;
 
-        public DummySpriteLookup(Wad wad)
+        public DummySpriteLookup(WadObj wad)
         {
             var temp = new Dictionary<string, List<SpriteInfo>>();
             for (var i = 0; i < (int)Sprite.Count; i++)
@@ -109,7 +110,7 @@ namespace ConsoleDoom.DoomEntity.Graphics.Dummy
             }
         }
 
-        private static IEnumerable<int> EnumerateSprites(Wad wad)
+        private static IEnumerable<int> EnumerateSprites(WadObj wad)
         {
             var spriteSection = false;
 

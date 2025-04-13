@@ -3,6 +3,7 @@ using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.DoomEntity.Wad;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -15,7 +16,7 @@ namespace ConsoleDoom.DoomEntity
     {
         private static Tuple<Action<World, Player, PlayerSpriteDef>, Action<World, Mobj>>[] sourcePointerTable;
 
-        public static void Initialize(CommandLineArgs args, Wad wad)
+        public static void Initialize(CommandLineArgs args, WadObj wad)
         {
             if (args.deh.Present)
             {
@@ -53,7 +54,7 @@ namespace ConsoleDoom.DoomEntity
             }
         }
 
-        private static void ReadDeHackEdLump(Wad wad)
+        private static void ReadDeHackEdLump(WadObj wad)
         {
             var lump = wad.GetLumpNumber("DEHACKED");
 

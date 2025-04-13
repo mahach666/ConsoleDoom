@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleDoom.DoomEntity.Wad;
+using System;
 
 namespace ConsoleDoom.DoomEntity.Graphics
 {
@@ -16,7 +17,7 @@ namespace ConsoleDoom.DoomEntity.Graphics
 
         private uint[][] palettes;
 
-        public Palette(Wad wad)
+        public Palette(WadObj wad)
         {
             try
             {
