@@ -3,6 +3,7 @@ using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 using ConsoleDoom.DoomEntity.Wad;
+using ConsoleDoom.DoomEntity.World;
 using System;
 using System.Collections.Generic;
 
@@ -683,7 +684,7 @@ namespace ConsoleDoom.Video
         // Camera view
         ////////////////////////////////////////////////////////////
 
-        private World world;
+        private WorldObj world;
 
         private Fixed viewX;
         private Fixed viewY;

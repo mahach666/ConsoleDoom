@@ -1,6 +1,6 @@
 ﻿using ConsoleDoom.DoomEntity.Map;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public sealed class StrobeFlash : Thinker
     {
@@ -8,7 +8,7 @@ namespace ConsoleDoom
         public static readonly int FastDark = 15;
         public static readonly int SlowDark = 35;
 
-        private World world;
+        private WorldObj world;
 
         private Sector sector;
         private int count;
@@ -17,7 +17,7 @@ namespace ConsoleDoom
         private int darkTime;
         private int brightTime;
 
-        public StrobeFlash(World world)
+        public StrobeFlash(WorldObj world)
         {
             this.world = world;
         }

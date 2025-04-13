@@ -1,4 +1,5 @@
 ﻿using ConsoleDoom.DoomEntity.Map;
+using ConsoleDoom.DoomEntity.World;
 using System.Text;
 
 namespace ConsoleDoom.DoomEntity.Common
@@ -45,7 +46,7 @@ namespace ConsoleDoom.DoomEntity.Common
             return hash;
         }
 
-        public static int GetMobjHash(World world)
+        public static int GetMobjHash(WorldObj world)
         {
             var hash = 0;
             foreach (var thinker in world.Thinkers)
@@ -94,7 +95,7 @@ namespace ConsoleDoom.DoomEntity.Common
             return sb.ToString();
         }
 
-        public static void DumpMobjCsv(string path, World world)
+        public static void DumpMobjCsv(string path, WorldObj world)
         {
             using (var writer = new System.IO.StreamWriter(path))
             {
@@ -120,7 +121,7 @@ namespace ConsoleDoom.DoomEntity.Common
             return hash;
         }
 
-        public static int GetSectorHash(World world)
+        public static int GetSectorHash(WorldObj world)
         {
             var hash = 0;
             foreach (var sector in world.Map.Sectors)

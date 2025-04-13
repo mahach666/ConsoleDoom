@@ -4,6 +4,7 @@ using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.DoomEntity.World;
 using System;
 using System.IO;
 
@@ -124,7 +125,7 @@ namespace ConsoleDoom
                 ptr += (4 - (ptr & 3)) & 3;
             }
 
-            private void ArchivePlayers(World world)
+            private void ArchivePlayers(WorldObj world)
             {
                 var players = world.Options.Players;
                 for (var i = 0; i < Player.MaxPlayerCount; i++)
@@ -140,7 +141,7 @@ namespace ConsoleDoom
                 }
             }
 
-            private void ArchiveWorld(World world)
+            private void ArchiveWorld(WorldObj world)
             {
                 // Do sectors.
                 var sectors = world.Map.Sectors;
@@ -157,7 +158,7 @@ namespace ConsoleDoom
                 }
             }
 
-            private void ArchiveThinkers(World world)
+            private void ArchiveThinkers(WorldObj world)
             {
                 var thinkers = world.Thinkers;
 
@@ -225,7 +226,7 @@ namespace ConsoleDoom
                 data[ptr++] = (byte)ThinkerClass.End;
             }
 
-            private void ArchiveSpecials(World world)
+            private void ArchiveSpecials(WorldObj world)
             {
                 var thinkers = world.Thinkers;
                 var sa = world.SectorAction;
@@ -619,7 +620,7 @@ namespace ConsoleDoom
                 return value;
             }
 
-            private void UnArchivePlayers(World world)
+            private void UnArchivePlayers(WorldObj world)
             {
                 var players = world.Options.Players;
                 for (var i = 0; i < Player.MaxPlayerCount; i++)
@@ -635,7 +636,7 @@ namespace ConsoleDoom
                 }
             }
 
-            private void UnArchiveWorld(World world)
+            private void UnArchiveWorld(WorldObj world)
             {
                 // Do sectors.
                 var sectors = world.Map.Sectors;
@@ -652,7 +653,7 @@ namespace ConsoleDoom
                 }
             }
 
-            private void UnArchiveThinkers(World world)
+            private void UnArchiveThinkers(WorldObj world)
             {
                 var thinkers = world.Thinkers;
                 var ta = world.ThingAllocation;
@@ -732,7 +733,7 @@ namespace ConsoleDoom
                 }
             }
 
-            private void UnArchiveSpecials(World world)
+            private void UnArchiveSpecials(WorldObj world)
             {
                 var thinkers = world.Thinkers;
                 var sa = world.SectorAction;

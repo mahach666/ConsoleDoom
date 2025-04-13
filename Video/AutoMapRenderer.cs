@@ -4,6 +4,7 @@ using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 using ConsoleDoom.DoomEntity.Wad;
+using ConsoleDoom.DoomEntity.World;
 using System;
 
 namespace ConsoleDoom.Video
@@ -232,7 +233,7 @@ namespace ConsoleDoom.Video
                 scale);
         }
 
-        private void DrawPlayers(World world)
+        private void DrawPlayers(WorldObj world)
         {
             var options = world.Options;
             var players = options.Players;
@@ -273,7 +274,7 @@ namespace ConsoleDoom.Video
             }
         }
 
-        private void DrawThings(World world)
+        private void DrawThings(WorldObj world)
         {
             foreach (var thinker in world.Thinkers)
             {

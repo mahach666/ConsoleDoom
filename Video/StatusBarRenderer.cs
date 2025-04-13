@@ -2,6 +2,7 @@
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.Wad;
+using ConsoleDoom.DoomEntity.World;
 
 namespace ConsoleDoom.Video
 {

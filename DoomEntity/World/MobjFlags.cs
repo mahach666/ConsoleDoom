@@ -1,10 +1,6 @@
-﻿
+﻿using System;
 
-
-
-using System;
-
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     [Flags]
     public enum MobjFlags

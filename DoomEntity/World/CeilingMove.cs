@@ -1,11 +1,11 @@
 ﻿using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
 	public sealed class CeilingMove : Thinker
 	{
-		private World world;
+		private WorldObj world;
 
 		private CeilingMoveType type;
 		private Sector sector;
@@ -22,7 +22,7 @@ namespace ConsoleDoom
 
 		private int oldDirection;
 
-		public CeilingMove(World world)
+		public CeilingMove(WorldObj world)
 		{
 			this.world = world;
 		}

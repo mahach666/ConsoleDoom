@@ -1,20 +1,16 @@
-﻿
-
-
-
-using ConsoleDoom.DoomEntity.Game;
+﻿using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 using System;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
 	public sealed class ThingInteraction
 	{
-		private World world;
+		private WorldObj world;
 
-		public ThingInteraction(World world)
+		public ThingInteraction(WorldObj world)
 		{
 			this.world = world;
 

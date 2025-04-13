@@ -4,7 +4,7 @@ using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.MathUtils;
 using System;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public sealed class PlayerBehavior
     {
@@ -32,9 +32,9 @@ namespace ConsoleDoom
 
 
 
-        private World world;
+        private WorldObj world;
 
-        public PlayerBehavior(World world)
+        public PlayerBehavior(WorldObj world)
         {
             this.world = world;
         }

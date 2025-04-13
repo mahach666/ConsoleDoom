@@ -5,13 +5,13 @@ using ConsoleDoom.DoomEntity.MathUtils;
 using System;
 using System.Collections.Generic;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public sealed class ThingAllocation
     {
-        private World world;
+        private WorldObj world;
 
-        public ThingAllocation(World world)
+        public ThingAllocation(WorldObj world)
         {
             this.world = world;
 

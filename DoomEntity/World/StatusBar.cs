@@ -4,11 +4,11 @@ using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.MathUtils;
 using System;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
 	public sealed class StatusBar
 	{
-		private World world;
+		private WorldObj world;
 
 		// Used for appopriately pained face.
 		private int oldHealth;
@@ -32,7 +32,7 @@ namespace ConsoleDoom
 
 		private DoomRandom random;
 
-		public StatusBar(World world)
+		public StatusBar(WorldObj world)
 		{
 			this.world = world;
 

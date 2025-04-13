@@ -1,11 +1,11 @@
 ﻿using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
 	public class VerticalDoor : Thinker
 	{
-		private World world;
+		private WorldObj world;
 
 		private VerticalDoorType type;
 		private Sector sector;
@@ -22,7 +22,7 @@ namespace ConsoleDoom
 		// (keep in case a door going down is reset).
 		private int topCountDown;
 
-		public VerticalDoor(World world)
+		public VerticalDoor(WorldObj world)
 		{
 			this.world = world;
 		}

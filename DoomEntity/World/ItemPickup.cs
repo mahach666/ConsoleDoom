@@ -4,13 +4,13 @@ using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.MathUtils;
 using System;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public sealed class ItemPickup
     {
-        private World world;
+        private WorldObj world;
 
-        public ItemPickup(World world)
+        public ItemPickup(WorldObj world)
         {
             this.world = world;
         }

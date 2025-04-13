@@ -5,7 +5,7 @@ using ConsoleDoom.DoomEntity.Map;
 using System;
 using System.Linq;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public sealed class Cheat
     {
@@ -29,12 +29,12 @@ namespace ConsoleDoom
 
         private static readonly int maxCodeLength = list.Max(info => info.Code.Length);
 
-        private World world;
+        private WorldObj world;
 
         private char[] buffer;
         private int p;
 
-        public Cheat(World world)
+        public Cheat(WorldObj world)
         {
             this.world = world;
 

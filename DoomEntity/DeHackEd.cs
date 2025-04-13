@@ -4,6 +4,7 @@ using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.MathUtils;
 using ConsoleDoom.DoomEntity.Wad;
+using ConsoleDoom.DoomEntity.World;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,7 +15,7 @@ namespace ConsoleDoom.DoomEntity
 {
     public static class DeHackEd
     {
-        private static Tuple<Action<World, Player, PlayerSpriteDef>, Action<World, Mobj>>[] sourcePointerTable;
+        private static Tuple<Action<WorldObj, Player, PlayerSpriteDef>, Action<WorldObj, Mobj>>[] sourcePointerTable;
 
         public static void Initialize(CommandLineArgs args, WadObj wad)
         {
@@ -95,7 +96,7 @@ namespace ConsoleDoom.DoomEntity
         {
             if (sourcePointerTable == null)
             {
-                sourcePointerTable = new Tuple<Action<World, Player, PlayerSpriteDef>, Action<World, Mobj>>[DoomInfo.States.Length];
+                sourcePointerTable = new Tuple<Action<WorldObj, Player, PlayerSpriteDef>, Action<WorldObj, Mobj>>[DoomInfo.States.Length];
                 for (var i = 0; i < sourcePointerTable.Length; i++)
                 {
                     var playerAction = DoomInfo.States[i].PlayerAction;

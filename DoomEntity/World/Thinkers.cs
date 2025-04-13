@@ -1,18 +1,14 @@
-﻿
-
-
-
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public sealed class Thinkers
     {
-        private World world;
+        private WorldObj world;
 
-        public Thinkers(World world)
+        public Thinkers(WorldObj world)
         {
             this.world = world;
 

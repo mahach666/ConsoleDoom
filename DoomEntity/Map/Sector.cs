@@ -2,6 +2,7 @@
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.MathUtils;
 using ConsoleDoom.DoomEntity.Wad;
+using ConsoleDoom.DoomEntity.World;
 using System;
 using System.Collections;
 using System.Collections.Generic;

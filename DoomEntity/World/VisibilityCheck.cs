@@ -1,11 +1,11 @@
 ﻿using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
 	public sealed class VisibilityCheck
 	{
-		private World world;
+		private WorldObj world;
 
 		// Eye z of looker.
 		private Fixed sightZStart;
@@ -19,7 +19,7 @@ namespace ConsoleDoom
 
 		private DivLine occluder;
 
-		public VisibilityCheck(World world)
+		public VisibilityCheck(WorldObj world)
 		{
 			this.world = world;
 

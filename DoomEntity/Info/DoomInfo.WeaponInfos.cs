@@ -1,4 +1,6 @@
-﻿namespace ConsoleDoom.DoomEntity.Info
+﻿using ConsoleDoom.DoomEntity.World;
+
+namespace ConsoleDoom.DoomEntity.Info
 {
     public static partial class DoomInfo
     {

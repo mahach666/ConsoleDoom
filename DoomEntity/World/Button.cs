@@ -1,6 +1,6 @@
 ﻿using ConsoleDoom.DoomEntity.Map;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public sealed class Button
     {

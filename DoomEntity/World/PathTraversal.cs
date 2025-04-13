@@ -1,16 +1,12 @@
-﻿
-
-
-
-using ConsoleDoom.DoomEntity.Map;
+﻿using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 using System;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public sealed class PathTraversal
     {
-        private World world;
+        private WorldObj world;
 
         private Intercept[] intercepts;
         private int interceptCount;
@@ -23,7 +19,7 @@ namespace ConsoleDoom
         private Func<LineDef, bool> lineInterceptFunc;
         private Func<Mobj, bool> thingInterceptFunc;
 
-        public PathTraversal(World world)
+        public PathTraversal(WorldObj world)
         {
             this.world = world;
 

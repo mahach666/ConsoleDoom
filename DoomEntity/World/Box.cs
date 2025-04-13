@@ -1,6 +1,6 @@
 ﻿using ConsoleDoom.DoomEntity.MathUtils;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public static class Box
     {

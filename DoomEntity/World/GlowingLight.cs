@@ -1,19 +1,19 @@
 ﻿using ConsoleDoom.DoomEntity.Map;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public sealed class GlowingLight : Thinker
     {
         private static readonly int glowSpeed = 8;
 
-        private World world;
+        private WorldObj world;
 
         private Sector sector;
         private int minLight;
         private int maxLight;
         private int direction;
 
-        public GlowingLight(World world)
+        public GlowingLight(WorldObj world)
         {
             this.world = world;
         }

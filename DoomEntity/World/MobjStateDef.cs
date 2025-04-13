@@ -2,7 +2,7 @@
 using ConsoleDoom.DoomEntity.Graphics;
 using System;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public class MobjStateDef
     {
@@ -10,8 +10,8 @@ namespace ConsoleDoom
         private Sprite sprite;
         private int frame;
         private int tics;
-        private Action<World, Player, PlayerSpriteDef> playerAction;
-        private Action<World, Mobj> mobjAction;
+        private Action<WorldObj, Player, PlayerSpriteDef> playerAction;
+        private Action<WorldObj, Mobj> mobjAction;
         private MobjState next;
         private int misc1;
         private int misc2;
@@ -21,8 +21,8 @@ namespace ConsoleDoom
             Sprite sprite,
             int frame,
             int tics,
-            Action<World, Player, PlayerSpriteDef> playerAction,
-            Action<World, Mobj> mobjAction,
+            Action<WorldObj, Player, PlayerSpriteDef> playerAction,
+            Action<WorldObj, Mobj> mobjAction,
             MobjState next,
             int misc1,
             int misc2)
@@ -62,13 +62,13 @@ namespace ConsoleDoom
             set => tics = value;
         }
 
-        public Action<World, Player, PlayerSpriteDef> PlayerAction
+        public Action<WorldObj, Player, PlayerSpriteDef> PlayerAction
         {
             get => playerAction;
             set => playerAction = value;
         }
 
-        public Action<World, Mobj> MobjAction
+        public Action<WorldObj, Mobj> MobjAction
         {
             get => mobjAction;
             set => mobjAction = value;

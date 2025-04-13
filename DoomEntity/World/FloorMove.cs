@@ -1,11 +1,11 @@
 ﻿using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
 	public sealed class FloorMove : Thinker
 	{
-		private World world;
+		private WorldObj world;
 
 		private FloorMoveType type;
 		private bool crush;
@@ -16,7 +16,7 @@ namespace ConsoleDoom
 		private Fixed floorDestHeight;
 		private Fixed speed;
 
-		public FloorMove(World world)
+		public FloorMove(WorldObj world)
 		{
 			this.world = world;
 		}

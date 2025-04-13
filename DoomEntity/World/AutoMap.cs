@@ -4,11 +4,11 @@ using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 using System.Collections.Generic;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public sealed class AutoMap
     {
-        private World world;
+        private WorldObj world;
 
         private Fixed minX;
         private Fixed maxX;
@@ -35,7 +35,7 @@ namespace ConsoleDoom
         private List<Vertex> marks;
         private int nextMarkNumber;
 
-        public AutoMap(World world)
+        public AutoMap(WorldObj world)
         {
             this.world = world;
 

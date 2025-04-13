@@ -1,12 +1,12 @@
 ﻿using ConsoleDoom.DoomEntity.Map;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public sealed class LightingChange
     {
-        private World world;
+        private WorldObj world;
 
-        public LightingChange(World world)
+        public LightingChange(WorldObj world)
         {
             this.world = world;
         }

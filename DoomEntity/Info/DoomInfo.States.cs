@@ -1,4 +1,5 @@
 ﻿using ConsoleDoom.DoomEntity.Graphics;
+using ConsoleDoom.DoomEntity.World;
 
 namespace ConsoleDoom.DoomEntity.Info
 {

@@ -3,6 +3,7 @@ using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.MathUtils;
 using ConsoleDoom.DoomEntity.Wad;
+using ConsoleDoom.DoomEntity.World;
 using System;
 using System.Collections.Generic;
 
@@ -14,7 +15,7 @@ namespace ConsoleDoom.DoomEntity.Map
         private IFlatLookup flats;
         private TextureAnimation animation;
 
-        private World world;
+        private WorldObj world;
 
         private Vertex[] vertices;
         private Sector[] sectors;
@@ -31,12 +32,12 @@ namespace ConsoleDoom.DoomEntity.Map
 
         private string title;
 
-        public MapObj(GameContent resorces, World world)
+        public MapObj(GameContent resorces, WorldObj world)
             : this(resorces.Wad, resorces.Textures, resorces.Flats, resorces.Animation, world)
         {
         }
 
-        public MapObj(WadObj wad, ITextureLookup textures, IFlatLookup flats, TextureAnimation animation, World world)
+        public MapObj(WadObj wad, ITextureLookup textures, IFlatLookup flats, TextureAnimation animation, WorldObj world)
         {
             try
             {

@@ -1,11 +1,11 @@
 ﻿using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
 	public sealed class Platform : Thinker
 	{
-		private World world;
+		private WorldObj world;
 
 		private Sector sector;
 		private Fixed speed;
@@ -19,7 +19,7 @@ namespace ConsoleDoom
 		private int tag;
 		private PlatformType type;
 
-		public Platform(World world)
+		public Platform(WorldObj world)
 		{
 			this.world = world;
 		}

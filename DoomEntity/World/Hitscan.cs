@@ -1,18 +1,14 @@
-﻿
-
-
-
-using ConsoleDoom.DoomEntity.Map;
+﻿using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 using System;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public sealed class Hitscan
     {
-        private World world;
+        private WorldObj world;
 
-        public Hitscan(World world)
+        public Hitscan(WorldObj world)
         {
             this.world = world;
 

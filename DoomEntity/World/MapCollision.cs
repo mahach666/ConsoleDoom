@@ -1,18 +1,18 @@
 ﻿using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public sealed class MapCollision
     {
-        private World world;
+        private WorldObj world;
 
         private Fixed openTop;
         private Fixed openBottom;
         private Fixed openRange;
         private Fixed lowFloor;
 
-        public MapCollision(World world)
+        public MapCollision(WorldObj world)
         {
             this.world = world;
         }

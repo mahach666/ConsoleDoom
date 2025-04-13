@@ -4,7 +4,7 @@ using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public class Mobj : Thinker
     {
@@ -75,7 +75,7 @@ namespace ConsoleDoom
         public static readonly Fixed OnFloorZ = Fixed.MinValue;
         public static readonly Fixed OnCeilingZ = Fixed.MaxValue;
 
-        private World world;
+        private WorldObj world;
 
         // Info for drawing: position.
         private Fixed x;
@@ -157,7 +157,7 @@ namespace ConsoleDoom
         private Fixed oldY;
         private Fixed oldZ;
 
-        public Mobj(World world)
+        public Mobj(WorldObj world)
         {
             this.world = world;
         }
@@ -406,7 +406,7 @@ namespace ConsoleDoom
             }
         }
 
-        public World World => world;
+        public WorldObj World => world;
 
         public Fixed X
         {

@@ -1,17 +1,17 @@
 ﻿using ConsoleDoom.DoomEntity.Map;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public sealed class FireFlicker : Thinker
     {
-        private World world;
+        private WorldObj world;
 
         private Sector sector;
         private int count;
         private int maxLight;
         private int minLight;
 
-        public FireFlicker(World world)
+        public FireFlicker(WorldObj world)
         {
             this.world = world;
         }

@@ -1,20 +1,16 @@
-﻿
-
-
-
-using ConsoleDoom.DoomEntity.Game;
+﻿using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 using System;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public sealed class MonsterBehavior
     {
-        private World world;
+        private WorldObj world;
 
-        public MonsterBehavior(World world)
+        public MonsterBehavior(WorldObj world)
         {
             this.world = world;
 

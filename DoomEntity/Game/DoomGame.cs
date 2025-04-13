@@ -1,6 +1,7 @@
 ﻿using ConsoleDoom.DoomEntity.Event;
 using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.Intermission;
+using ConsoleDoom.DoomEntity.World;
 using System;
 using System.IO;
 
@@ -16,7 +17,7 @@ namespace ConsoleDoom.DoomEntity.Game
 
 		private int gameTic;
 
-		private World world;
+		private WorldObj world;
 		private Interlude intermission;
 		private Finale finale;
 
@@ -283,7 +284,7 @@ namespace ConsoleDoom.DoomEntity.Game
 
 			options.Sound.Reset();
 
-			world = new World(content, options, this);
+			world = new WorldObj(content, options, this);
 
 			options.UserInput.Reset();
 		}
@@ -584,7 +585,7 @@ namespace ConsoleDoom.DoomEntity.Game
 		public GameOptions Options => options;
 		public GameState State => gameState;
 		public int GameTic => gameTic;
-		public World World => world;
+		public WorldObj World => world;
 		public Interlude Intermission => intermission;
 		public Finale Finale => finale;
 		public bool Paused => paused;

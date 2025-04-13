@@ -4,9 +4,9 @@ using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
-    public sealed partial class World
+    public sealed partial class WorldObj
     {
         private GameOptions options;
         private DoomGame game;
@@ -51,7 +51,7 @@ namespace ConsoleDoom
         // See SubstNullMobj().
         private Mobj dummy;
 
-        public World(GameContent resorces, GameOptions options, DoomGame game)
+        public WorldObj(GameContent resorces, GameOptions options, DoomGame game)
         {
             this.options = options;
             this.game = game;

@@ -1,20 +1,16 @@
-﻿
-
-
-
-using ConsoleDoom.DoomEntity.Map;
+﻿using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 using System;
 using System.Collections.Generic;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public class Specials
     {
         private static readonly int maxButtonCount = 32;
         private static readonly int buttonTime = 35;
 
-        private World world;
+        private WorldObj world;
 
         private bool levelTimer;
         private int levelTimeCount;
@@ -26,7 +22,7 @@ namespace ConsoleDoom
 
         private LineDef[] scrollLines;
 
-        public Specials(World world)
+        public Specials(WorldObj world)
         {
             this.world = world;
 

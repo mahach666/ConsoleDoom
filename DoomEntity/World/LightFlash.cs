@@ -1,10 +1,10 @@
 ﻿using ConsoleDoom.DoomEntity.Map;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public sealed class LightFlash : Thinker
     {
-        private World world;
+        private WorldObj world;
 
         private Sector sector;
         private int count;
@@ -13,7 +13,7 @@ namespace ConsoleDoom
         private int maxTime;
         private int minTime;
 
-        public LightFlash(World world)
+        public LightFlash(WorldObj world)
         {
             this.world = world;
         }

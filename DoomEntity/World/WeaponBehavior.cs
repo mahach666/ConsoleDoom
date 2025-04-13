@@ -3,7 +3,7 @@ using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public sealed class WeaponBehavior
     {
@@ -16,12 +16,12 @@ namespace ConsoleDoom
         private static readonly Fixed RaiseSpeed = Fixed.FromInt(6);
         private static readonly Fixed LowerSpeed = Fixed.FromInt(6);
 
-        private World world;
+        private WorldObj world;
 
         private Fixed currentBulletSlope;
 
 
-        public WeaponBehavior(World world)
+        public WeaponBehavior(WorldObj world)
         {
             this.world = world;
         }

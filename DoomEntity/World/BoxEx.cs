@@ -1,7 +1,7 @@
 ﻿using ConsoleDoom.DoomEntity.MathUtils;
 using System.Runtime.CompilerServices;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
     public static class BoxEx
     {

@@ -1,21 +1,17 @@
-﻿
-
-
-
-using ConsoleDoom.DoomEntity.Game;
+﻿using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
 using System;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.World
 {
 	public sealed class MapInteraction
 	{
 		private static readonly Fixed useRange = Fixed.FromInt(64);
 
-		private World world;
+		private WorldObj world;
 
-		public MapInteraction(World world)
+		public MapInteraction(WorldObj world)
 		{
 			this.world = world;
 
