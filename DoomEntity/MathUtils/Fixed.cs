@@ -1,11 +1,7 @@
-﻿
-
-
-
-using System;
+﻿using System;
 using System.Runtime.CompilerServices;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.MathUtils
 {
     public struct Fixed
     {

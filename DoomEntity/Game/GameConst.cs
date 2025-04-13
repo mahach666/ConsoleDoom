@@ -1,4 +1,6 @@
-﻿namespace ConsoleDoom.DoomEntity.Game
+﻿using ConsoleDoom.DoomEntity.MathUtils;
+
+namespace ConsoleDoom.DoomEntity.Game
 {
     public static class GameConst
     {

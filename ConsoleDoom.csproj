@@ -153,7 +153,7 @@
     <Compile Include="DoomEntity\Map\LineDef.cs" />
     <Compile Include="DoomEntity\Map\LineFlags.cs" />
     <Compile Include="DoomEntity\Map\LineSpecial.cs" />
-    <Compile Include="DoomEntity\Map\Map.cs" />
+    <Compile Include="DoomEntity\Map\MapObj.cs" />
     <Compile Include="DoomEntity\Map\MapThing.cs" />
     <Compile Include="DoomEntity\Map\Node.cs" />
     <Compile Include="DoomEntity\Map\Reject.cs" />
@@ -165,12 +165,12 @@
     <Compile Include="DoomEntity\Map\Subsector.cs" />
     <Compile Include="DoomEntity\Map\ThingFlags.cs" />
     <Compile Include="DoomEntity\Map\Vertex.cs" />
-    <Compile Include="DoomEntity\Math\Angle.cs" />
-    <Compile Include="DoomEntity\Math\Fixed.cs" />
-    <Compile Include="DoomEntity\Math\Geometry.cs" />
-    <Compile Include="DoomEntity\Math\Trig.cs" />
-    <Compile Include="DoomEntity\Math\Trig.Tables.cs" />
-    <Compile Include="DoomEntity\Math\Utils.cs" />
+    <Compile Include="DoomEntity\MathUtils\Angle.cs" />
+    <Compile Include="DoomEntity\MathUtils\Fixed.cs" />
+    <Compile Include="DoomEntity\MathUtils\Geometry.cs" />
+    <Compile Include="DoomEntity\MathUtils\Trig.cs" />
+    <Compile Include="DoomEntity\MathUtils\Trig.Tables.cs" />
+    <Compile Include="DoomEntity\MathUtils\Utils.cs" />
     <Compile Include="DoomEntity\Menu\DoomMenu.cs" />
     <Compile Include="DoomEntity\Menu\HelpScreen.cs" />
     <Compile Include="DoomEntity\Menu\LoadMenu.cs" />

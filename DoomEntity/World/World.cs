@@ -2,6 +2,7 @@
 using ConsoleDoom.DoomEntity.Event;
 using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Map;
+using ConsoleDoom.DoomEntity.MathUtils;
 
 namespace ConsoleDoom
 {
@@ -11,7 +12,7 @@ namespace ConsoleDoom
         private DoomGame game;
         private DoomRandom random;
 
-        private Map map;
+        private MapObj map;
 
         private Thinkers thinkers;
         private Specials specials;
@@ -56,7 +57,7 @@ namespace ConsoleDoom
             this.game = game;
             this.random = options.Random;
 
-            map = new Map(resorces, this);
+            map = new MapObj(resorces, this);
 
             thinkers = new Thinkers(this);
             specials = new Specials(this);
@@ -123,7 +124,7 @@ namespace ConsoleDoom
 
             dummy = new Mobj(this);
 
-            options.Music.StartMusic(Map.GetMapBgm(options), true);
+            options.Music.StartMusic(MapObj.GetMapBgm(options), true);
         }
 
         public UpdateResult Update()
@@ -326,7 +327,7 @@ namespace ConsoleDoom
         public DoomGame Game => game;
         public DoomRandom Random => random;
 
-        public Map Map => map;
+        public MapObj Map => map;
 
         public Thinkers Thinkers => thinkers;
         public Specials Specials => specials;

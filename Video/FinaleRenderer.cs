@@ -1,6 +1,7 @@
 ﻿using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Intermission;
+using ConsoleDoom.DoomEntity.MathUtils;
 
 namespace ConsoleDoom.Video
 {

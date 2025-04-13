@@ -1,12 +1,13 @@
 ﻿using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Info;
+using ConsoleDoom.DoomEntity.MathUtils;
 using System;
 using System.Collections.Generic;
 
 namespace ConsoleDoom.DoomEntity.Map
 {
-    public sealed class Map
+    public sealed class MapObj
     {
         private ITextureLookup textures;
         private IFlatLookup flats;
@@ -29,12 +30,12 @@ namespace ConsoleDoom.DoomEntity.Map
 
         private string title;
 
-        public Map(GameContent resorces, World world)
+        public MapObj(GameContent resorces, World world)
             : this(resorces.Wad, resorces.Textures, resorces.Flats, resorces.Animation, world)
         {
         }
 
-        public Map(Wad wad, ITextureLookup textures, IFlatLookup flats, TextureAnimation animation, World world)
+        public MapObj(Wad wad, ITextureLookup textures, IFlatLookup flats, TextureAnimation animation, World world)
         {
             try
             {

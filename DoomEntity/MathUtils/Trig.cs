@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.MathUtils
 {
     public static partial class Trig
     {

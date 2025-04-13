@@ -1,4 +1,6 @@
-﻿namespace ConsoleDoom
+﻿using ConsoleDoom.DoomEntity.MathUtils;
+
+namespace ConsoleDoom
 {
     public static class Box
     {

@@ -1,4 +1,5 @@
-﻿using System.Runtime.CompilerServices;
+﻿using ConsoleDoom.DoomEntity.MathUtils;
+using System.Runtime.CompilerServices;
 
 namespace ConsoleDoom
 {

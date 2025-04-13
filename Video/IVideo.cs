@@ -1,4 +1,5 @@
 ﻿using ConsoleDoom.DoomEntity;
+using ConsoleDoom.DoomEntity.MathUtils;
 
 namespace ConsoleDoom.Video
 {

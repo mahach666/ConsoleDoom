@@ -1,11 +1,7 @@
-﻿
-
-
-
-using System;
+﻿using System;
 using System.Runtime.CompilerServices;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.MathUtils
 {
     public struct Angle
     {
@@ -31,19 +27,19 @@ namespace ConsoleDoom
 
         public static Angle FromRadian(double radian)
         {
-            var data = Math.Round(0x100000000 * (radian / (2 * Math.PI)));
+            var data = System.Math.Round(0x100000000 * (radian / (2 * System.Math.PI)));
             return new Angle((uint)data);
         }
 
         public static Angle FromDegree(double degree)
         {
-            var data = Math.Round(0x100000000 * (degree / 360));
+            var data = System.Math.Round(0x100000000 * (degree / 360));
             return new Angle((uint)data);
         }
 
         public double ToRadian()
         {
-            return 2 * Math.PI * ((double)data / 0x100000000);
+            return 2 * System.Math.PI * ((double)data / 0x100000000);
         }
 
         public double ToDegree()

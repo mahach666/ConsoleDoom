@@ -3,6 +3,7 @@
 
 
 using ConsoleDoom.DoomEntity.Map;
+using ConsoleDoom.DoomEntity.MathUtils;
 using System;
 using System.Collections.Generic;
 

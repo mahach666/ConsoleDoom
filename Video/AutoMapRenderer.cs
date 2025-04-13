@@ -2,6 +2,7 @@
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.Map;
+using ConsoleDoom.DoomEntity.MathUtils;
 using System;
 
 namespace ConsoleDoom.Video
@@ -128,8 +129,8 @@ namespace ConsoleDoom.Video
 
             // This hack aligns the view point to an integer coordinate
             // so that line shake is reduced when the view point moves.
-            renderViewX = ConsoleDoom.DoomEntity.Math.Utils.RoundF(zoom * ppu * actualViewX) / (zoom * ppu);
-            renderViewY = ConsoleDoom.DoomEntity.Math.Utils.RoundF(zoom * ppu * actualViewY) / (zoom * ppu);
+            renderViewX = ConsoleDoom.DoomEntity.MathUtils.Utils.RoundF(zoom * ppu * actualViewX) / (zoom * ppu);
+            renderViewY = ConsoleDoom.DoomEntity.MathUtils.Utils.RoundF(zoom * ppu * actualViewY) / (zoom * ppu);
 
             foreach (var line in world.Map.Lines)
             {
@@ -198,8 +199,8 @@ namespace ConsoleDoom.Video
                 var pos = ToScreenPos(am.Marks[i]);
                 screen.DrawPatch(
                     markNumbers[i],
-                    (int)ConsoleDoom.DoomEntity.Math.Utils.RoundF(pos.X),
-                    (int)ConsoleDoom.DoomEntity.Math.Utils.RoundF(pos.Y),
+                    (int)ConsoleDoom.DoomEntity.MathUtils.Utils.RoundF(pos.X),
+                    (int)ConsoleDoom.DoomEntity.MathUtils.Utils.RoundF(pos.Y),
                     scale);
             }
 

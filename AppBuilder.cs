@@ -4,6 +4,7 @@ using ConsoleDoom.DoomEntity;
 using System;
 using System.Linq;
 using ConsoleDoom.DoomEntity.Game;
+using ConsoleDoom.DoomEntity.MathUtils;
 
 namespace ConsoleDoom
 {

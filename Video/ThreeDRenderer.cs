@@ -1,6 +1,7 @@
 ﻿using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Map;
+using ConsoleDoom.DoomEntity.MathUtils;
 using System;
 using System.Collections.Generic;
 
@@ -1306,7 +1307,7 @@ namespace ConsoleDoom.Video
                 wallLightLevel++;
             }
 
-            var wallLights = scaleLight[ConsoleDoom.DoomEntity.Math.Utils.Clamp(wallLightLevel, 0, lightLevelCount - 1)];
+            var wallLights = scaleLight[ConsoleDoom.DoomEntity.MathUtils.Utils.Clamp(wallLightLevel, 0, lightLevelCount - 1)];
 
             //
             // Determine where on the screen the wall is drawn.
@@ -1327,7 +1328,7 @@ namespace ConsoleDoom.Video
             //
 
             var planeLightLevel = (frontSector.LightLevel >> lightSegShift) + extraLight;
-            var planeLights = zLight[ConsoleDoom.DoomEntity.Math.Utils.Clamp(planeLightLevel, 0, lightLevelCount - 1)];
+            var planeLights = zLight[ConsoleDoom.DoomEntity.MathUtils.Utils.Clamp(planeLightLevel, 0, lightLevelCount - 1)];
 
             //
             // Prepare to record the rendering history.
@@ -1619,7 +1620,7 @@ namespace ConsoleDoom.Video
                     wallLightLevel++;
                 }
 
-                wallLights = scaleLight[ConsoleDoom.DoomEntity.Math.Utils.Clamp(wallLightLevel, 0, lightLevelCount - 1)];
+                wallLights = scaleLight[ConsoleDoom.DoomEntity.MathUtils.Utils.Clamp(wallLightLevel, 0, lightLevelCount - 1)];
             }
 
             //
@@ -1677,7 +1678,7 @@ namespace ConsoleDoom.Video
             //
 
             var planeLightLevel = (frontSector.LightLevel >> lightSegShift) + extraLight;
-            var planeLights = zLight[ConsoleDoom.DoomEntity.Math.Utils.Clamp(planeLightLevel, 0, lightLevelCount - 1)];
+            var planeLights = zLight[ConsoleDoom.DoomEntity.MathUtils.Utils.Clamp(planeLightLevel, 0, lightLevelCount - 1)];
 
             //
             // Prepare to record the rendering history.
@@ -1935,7 +1936,7 @@ namespace ConsoleDoom.Video
                 wallLightLevel++;
             }
 
-            var wallLights = scaleLight[ConsoleDoom.DoomEntity.Math.Utils.Clamp(wallLightLevel, 0, lightLevelCount - 1)];
+            var wallLights = scaleLight[ConsoleDoom.DoomEntity.MathUtils.Utils.Clamp(wallLightLevel, 0, lightLevelCount - 1)];
 
             var wallTexture = textures[world.Specials.TextureTranslation[seg.SideDef.MiddleTexture]];
             var mask = wallTexture.Width - 1;
@@ -2449,7 +2450,7 @@ namespace ConsoleDoom.Video
             sector.ValidCount = validCount;
 
             var spriteLightLevel = (sector.LightLevel >> lightSegShift) + extraLight;
-            var spriteLights = scaleLight[ConsoleDoom.DoomEntity.Math.Utils.Clamp(spriteLightLevel, 0, lightLevelCount - 1)];
+            var spriteLights = scaleLight[ConsoleDoom.DoomEntity.MathUtils.Utils.Clamp(spriteLightLevel, 0, lightLevelCount - 1)];
 
             // Handle all things in sector.
             foreach (var thing in sector)

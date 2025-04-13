@@ -1,4 +1,6 @@
-﻿namespace ConsoleDoom
+﻿using ConsoleDoom.DoomEntity.MathUtils;
+
+namespace ConsoleDoom
 {
     public sealed class PlayerSpriteDef
     {

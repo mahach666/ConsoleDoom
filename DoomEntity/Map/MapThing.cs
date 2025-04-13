@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleDoom.DoomEntity.MathUtils;
+using System;
 
 namespace ConsoleDoom.DoomEntity.Map
 {
@@ -44,7 +45,7 @@ namespace ConsoleDoom.DoomEntity.Map
             return new MapThing(
                 Fixed.FromInt(x),
                 Fixed.FromInt(y),
-                new Angle(ConsoleDoom.Angle.Ang45.Data * (uint)(angle / 45)),
+                new Angle(Angle.Ang45.Data * (uint)(angle / 45)),
                 type,
                 (ThingFlags)flags);
         }

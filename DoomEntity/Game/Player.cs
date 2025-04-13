@@ -1,4 +1,5 @@
 ﻿using ConsoleDoom.DoomEntity.Info;
+using ConsoleDoom.DoomEntity.MathUtils;
 using System;
 
 namespace ConsoleDoom.DoomEntity.Game

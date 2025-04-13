@@ -2,6 +2,7 @@
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.Map;
+using ConsoleDoom.DoomEntity.MathUtils;
 
 namespace ConsoleDoom
 {

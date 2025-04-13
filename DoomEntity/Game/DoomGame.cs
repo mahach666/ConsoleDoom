@@ -479,11 +479,11 @@ namespace ConsoleDoom.DoomEntity.Game
 
 		public void InitNew(GameSkill skill, int episode, int map)
 		{
-			options.Skill = (GameSkill)ConsoleDoom.DoomEntity.Math.Utils.Clamp((int)skill, (int)GameSkill.Baby, (int)GameSkill.Nightmare);
+			options.Skill = (GameSkill)ConsoleDoom.DoomEntity.MathUtils.Utils.Clamp((int)skill, (int)GameSkill.Baby, (int)GameSkill.Nightmare);
 
 			if (options.GameMode == GameMode.Retail)
 			{
-				options.Episode = ConsoleDoom.DoomEntity.Math.Utils.Clamp(episode, 1, 4);
+				options.Episode = ConsoleDoom.DoomEntity.MathUtils.Utils.Clamp(episode, 1, 4);
 			}
 			else if (options.GameMode == GameMode.Shareware)
 			{
@@ -491,16 +491,16 @@ namespace ConsoleDoom.DoomEntity.Game
 			}
 			else
 			{
-				options.Episode = ConsoleDoom.DoomEntity.Math.Utils.Clamp(episode, 1, 4);
+				options.Episode = ConsoleDoom.DoomEntity.MathUtils.Utils.Clamp(episode, 1, 4);
 			}
 
 			if (options.GameMode == GameMode.Commercial)
 			{
-				options.Map = ConsoleDoom.DoomEntity.Math.Utils.Clamp(map, 1, 32);
+				options.Map = ConsoleDoom.DoomEntity.MathUtils.Utils.Clamp(map, 1, 32);
 			}
 			else
 			{
-				options.Map = ConsoleDoom.DoomEntity.Math.Utils.Clamp(map, 1, 9);
+				options.Map = ConsoleDoom.DoomEntity.MathUtils.Utils.Clamp(map, 1, 9);
 			}
 
 			options.Random.Clear();

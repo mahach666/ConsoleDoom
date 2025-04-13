@@ -1,5 +1,5 @@
 ﻿
-namespace ConsoleDoom.DoomEntity.Math
+namespace ConsoleDoom.DoomEntity.MathUtils
 {
     internal static class Utils
     {

@@ -1,5 +1,6 @@
 ﻿using ConsoleDoom.DoomEntity.Common;
 using ConsoleDoom.DoomEntity.Graphics;
+using ConsoleDoom.DoomEntity.MathUtils;
 using System;
 using System.Collections;
 using System.Collections.Generic;

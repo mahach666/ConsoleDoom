@@ -1,10 +1,7 @@
-﻿
-
-
-using ConsoleDoom.DoomEntity.Map;
+﻿using ConsoleDoom.DoomEntity.Map;
 using System;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.MathUtils
 {
     public static class Geometry
     {
@@ -208,7 +205,7 @@ namespace ConsoleDoom
         /// <summary>
         /// Get the subsector which contains the point.
         /// </summary>
-        public static Subsector PointInSubsector(Fixed x, Fixed y, Map map)
+        public static Subsector PointInSubsector(Fixed x, Fixed y, MapObj map)
         {
             // Single subsector is a special case.
             if (map.Nodes.Length == 0)
