@@ -2,6 +2,7 @@
 
 
 
+using ConsoleDoom.DoomEntity.Map;
 using System;
 using System.Collections.Generic;
 

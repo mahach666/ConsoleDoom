@@ -1,6 +1,7 @@
 ﻿
 
 
+using ConsoleDoom.DoomEntity.Map;
 using System;
 
 namespace ConsoleDoom

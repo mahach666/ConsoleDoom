@@ -1,5 +1,6 @@
 ﻿using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Graphics;
+using ConsoleDoom.DoomEntity.Map;
 using System;
 using System.Collections.Generic;
 

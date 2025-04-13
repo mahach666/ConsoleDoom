@@ -1,4 +1,6 @@
-﻿namespace ConsoleDoom
+﻿using ConsoleDoom.DoomEntity.Map;
+
+namespace ConsoleDoom
 {
     public sealed class MapCollision
     {

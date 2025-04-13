@@ -1,6 +1,7 @@
 ﻿using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Graphics;
 using ConsoleDoom.DoomEntity.Info;
+using ConsoleDoom.DoomEntity.Map;
 using System;
 
 namespace ConsoleDoom.Video

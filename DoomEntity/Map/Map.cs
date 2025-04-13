@@ -4,7 +4,7 @@ using ConsoleDoom.DoomEntity.Info;
 using System;
 using System.Collections.Generic;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Map
 {
     public sealed class Map
     {

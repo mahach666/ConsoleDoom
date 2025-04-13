@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using ConsoleDoom.DoomEntity.Map;
+using System.Text;
 
 namespace ConsoleDoom.DoomEntity.Common
 {

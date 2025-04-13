@@ -3,6 +3,7 @@
 
 
 using ConsoleDoom.DoomEntity.Game;
+using ConsoleDoom.DoomEntity.Map;
 using System;
 
 namespace ConsoleDoom

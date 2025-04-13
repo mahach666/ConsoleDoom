@@ -2,7 +2,7 @@
 using ConsoleDoom.DoomEntity.Graphics;
 using System;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Map
 {
     public sealed class SideDef
     {

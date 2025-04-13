@@ -1,5 +1,6 @@
 ﻿using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Info;
+using ConsoleDoom.DoomEntity.Map;
 
 namespace ConsoleDoom
 {

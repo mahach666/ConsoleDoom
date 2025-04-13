@@ -1,10 +1,4 @@
-﻿
-
-
-
-using System;
-
-namespace ConsoleDoom
+﻿namespace ConsoleDoom.DoomEntity.Map
 {
     public enum LineSpecial
     {
