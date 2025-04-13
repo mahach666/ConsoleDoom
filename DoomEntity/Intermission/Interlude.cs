@@ -2,9 +2,9 @@
 using ConsoleDoom.DoomEntity.Game;
 using System.Collections.Generic;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Intermission
 {
-    public sealed class Intermission
+    public sealed class Interlude
     {
         private GameOptions options;
 
@@ -47,7 +47,7 @@ namespace ConsoleDoom
 
         private bool completed;
 
-        public Intermission(GameOptions options, IntermissionInfo info)
+        public Interlude(GameOptions options, IntermissionInfo info)
         {
             this.options = options;
             this.info = info;

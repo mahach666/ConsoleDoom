@@ -4,6 +4,7 @@
 
 using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Graphics;
+using ConsoleDoom.DoomEntity.Intermission;
 using System;
 using System.Collections.Generic;
 
@@ -133,7 +134,7 @@ namespace ConsoleDoom.Video
         }
 
 
-        public void Render(Intermission im)
+        public void Render(Interlude im)
         {
             switch (im.State)
             {
@@ -163,7 +164,7 @@ namespace ConsoleDoom.Video
         }
 
 
-        private void DrawBackground(Intermission im)
+        private void DrawBackground(Interlude im)
         {
             if (im.Options.GameMode == GameMode.Commercial)
             {
@@ -183,7 +184,7 @@ namespace ConsoleDoom.Video
             }
         }
 
-        private void DrawSinglePlayerStats(Intermission im)
+        private void DrawSinglePlayerStats(Interlude im)
         {
             DrawBackground(im);
 
@@ -251,7 +252,7 @@ namespace ConsoleDoom.Video
             }
         }
 
-        private void DrawNetGameStats(Intermission im)
+        private void DrawNetGameStats(Interlude im)
         {
             DrawBackground(im);
 
@@ -336,7 +337,7 @@ namespace ConsoleDoom.Video
             }
         }
 
-        private void DrawDeathmatchStats(Intermission im)
+        private void DrawDeathmatchStats(Interlude im)
         {
             DrawBackground(im);
 
@@ -433,12 +434,12 @@ namespace ConsoleDoom.Video
         }
 
 
-        private void DrawNoState(Intermission im)
+        private void DrawNoState(Interlude im)
         {
             DrawShowNextLoc(im);
         }
 
-        private void DrawShowNextLoc(Intermission im)
+        private void DrawShowNextLoc(Interlude im)
         {
             DrawBackground(im);
 
@@ -487,7 +488,7 @@ namespace ConsoleDoom.Video
             }
         }
 
-        private void DrawFinishedLevelName(Intermission intermission)
+        private void DrawFinishedLevelName(Interlude intermission)
         {
             var wbs = intermission.Info;
             var y = titleY;
@@ -518,7 +519,7 @@ namespace ConsoleDoom.Video
                 y);
         }
 
-        private void DrawEnteringLevelName(Intermission im)
+        private void DrawEnteringLevelName(Interlude im)
         {
             var wbs = im.Info;
             int y = titleY;
@@ -648,7 +649,7 @@ namespace ConsoleDoom.Video
             }
         }
 
-        private void DrawBackgroundAnimation(Intermission im)
+        private void DrawBackgroundAnimation(Interlude im)
         {
             if (im.Options.GameMode == GameMode.Commercial)
             {

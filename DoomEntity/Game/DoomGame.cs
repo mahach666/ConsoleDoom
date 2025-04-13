@@ -1,5 +1,6 @@
 ﻿using ConsoleDoom.DoomEntity.Event;
 using ConsoleDoom.DoomEntity.Info;
+using ConsoleDoom.DoomEntity.Intermission;
 using System;
 using System.IO;
 
@@ -16,7 +17,7 @@ namespace ConsoleDoom.DoomEntity.Game
 		private int gameTic;
 
 		private World world;
-		private Intermission intermission;
+		private Interlude intermission;
 		private Finale finale;
 
 		private bool paused;
@@ -451,7 +452,7 @@ namespace ConsoleDoom.DoomEntity.Game
 			}
 
 			gameState = GameState.Intermission;
-			intermission = new Intermission(options, imInfo);
+			intermission = new Interlude(options, imInfo);
 		}
 
 		private void DoWorldDone()
@@ -584,7 +585,7 @@ namespace ConsoleDoom.DoomEntity.Game
 		public GameState State => gameState;
 		public int GameTic => gameTic;
 		public World World => world;
-		public Intermission Intermission => intermission;
+		public Interlude Intermission => intermission;
 		public Finale Finale => finale;
 		public bool Paused => paused;
 

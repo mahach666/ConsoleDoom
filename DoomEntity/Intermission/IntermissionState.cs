@@ -1,4 +1,4 @@
-﻿namespace ConsoleDoom
+﻿namespace ConsoleDoom.DoomEntity.Intermission
 {
     public enum IntermissionState
     {

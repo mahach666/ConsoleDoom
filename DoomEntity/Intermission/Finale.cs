@@ -2,7 +2,7 @@
 using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Info;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Intermission
 {
 	public sealed class Finale
 	{

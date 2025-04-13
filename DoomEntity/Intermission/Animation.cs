@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Intermission
 {
 	public sealed class Animation
 	{
-		private Intermission im;
+		private Interlude im;
 		private int number;
 
 		private AnimationType type;
@@ -17,7 +17,7 @@ namespace ConsoleDoom
 		private int patchNumber;
 		private int nextTic;
 
-		public Animation(Intermission intermission, AnimationInfo info, int number)
+		public Animation(Interlude intermission, AnimationInfo info, int number)
 		{
 			im = intermission;
 			this.number = number;

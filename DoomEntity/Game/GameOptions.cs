@@ -1,5 +1,6 @@
 ﻿using ConsoleDoom.Audio;
 using ConsoleDoom.DoomEntity.Common;
+using ConsoleDoom.DoomEntity.Intermission;
 using ConsoleDoom.UserInput;
 using ConsoleDoom.Video;
 

@@ -1,6 +1,6 @@
 ﻿using ConsoleDoom.DoomEntity.Game;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Intermission
 {
     public class PlayerScores
     {

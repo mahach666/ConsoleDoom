@@ -144,7 +144,7 @@
     <Compile Include="DoomEntity\Intermission\AnimationInfo.cs" />
     <Compile Include="DoomEntity\Intermission\AnimationType.cs" />
     <Compile Include="DoomEntity\Intermission\Finale.cs" />
-    <Compile Include="DoomEntity\Intermission\Intermission.cs" />
+    <Compile Include="DoomEntity\Intermission\Interlude.cs" />
     <Compile Include="DoomEntity\Intermission\IntermissionInfo.cs" />
     <Compile Include="DoomEntity\Intermission\IntermissionState.cs" />
     <Compile Include="DoomEntity\Intermission\PlayerScores.cs" />

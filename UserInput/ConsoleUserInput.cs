@@ -118,7 +118,7 @@ public class ConsoleUserInput : IUserInput
 
         SendMenuKey(ConsoleKey.Escape, DoomKey.Escape);
 
-        SendMenuKey(ConsoleKey.Y, DoomKey.A);
+        SendMenuKey(ConsoleKey.Y, DoomKey.Y);
         SendMenuKey(ConsoleKey.N, DoomKey.N);   
     }
 }

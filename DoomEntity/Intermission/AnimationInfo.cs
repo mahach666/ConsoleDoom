@@ -1,12 +1,7 @@
-﻿
-
-
-
-using ConsoleDoom.DoomEntity.Game;
-using System;
+﻿using ConsoleDoom.DoomEntity.Game;
 using System.Collections.Generic;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Intermission
 {
     public sealed class AnimationInfo
     {
