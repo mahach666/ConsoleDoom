@@ -1,7 +1,4 @@
-﻿
-
-
-
+﻿using ConsoleDoom.DoomEntity.Game;
 using System;
 using System.Collections.Generic;
 

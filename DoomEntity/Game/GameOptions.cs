@@ -1,12 +1,9 @@
-﻿
-
-
-using System;
-using ConsoleDoom.Video;
-using ConsoleDoom.Audio;
+﻿using ConsoleDoom.Audio;
+using ConsoleDoom.DoomEntity.Common;
 using ConsoleDoom.UserInput;
+using ConsoleDoom.Video;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Game
 {
     public sealed class GameOptions
     {

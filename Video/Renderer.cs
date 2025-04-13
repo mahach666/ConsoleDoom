@@ -3,6 +3,7 @@
 
 
 using ConsoleDoom.DoomEntity;
+using ConsoleDoom.DoomEntity.Game;
 using System;
 using System.Runtime.InteropServices;
 

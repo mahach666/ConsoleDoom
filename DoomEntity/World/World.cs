@@ -1,4 +1,8 @@
-﻿namespace ConsoleDoom
+﻿using ConsoleDoom.DoomEntity.Common;
+using ConsoleDoom.DoomEntity.Event;
+using ConsoleDoom.DoomEntity.Game;
+
+namespace ConsoleDoom
 {
     public sealed partial class World
     {

@@ -1,10 +1,8 @@
-﻿
-
-
+﻿using ConsoleDoom.DoomEntity.Event;
 using System;
 using System.IO;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Game
 {
 	public sealed class DoomGame
 	{

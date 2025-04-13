@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Common
 {
     public sealed class DoomRandom
     {

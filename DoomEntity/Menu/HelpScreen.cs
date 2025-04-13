@@ -1,4 +1,7 @@
-﻿namespace ConsoleDoom
+﻿using ConsoleDoom.DoomEntity.Event;
+using ConsoleDoom.DoomEntity.Game;
+
+namespace ConsoleDoom
 {
     public sealed class HelpScreen : MenuDef
     {

@@ -1,8 +1,4 @@
-﻿
-
-
-
-using System;
+﻿using ConsoleDoom.DoomEntity.Game;
 using System.Collections.Generic;
 
 namespace ConsoleDoom.Video

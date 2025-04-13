@@ -1,7 +1,4 @@
-﻿
-using System;
-
-namespace ConsoleDoom
+﻿namespace ConsoleDoom.DoomEntity.Game
 {
     public enum GameVersion
     {

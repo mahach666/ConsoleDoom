@@ -255,14 +255,6 @@
     <Compile Include="DoomEntity\World\World.cs" />
     <Compile Include="Extensions\DictionaryExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Silk\SilkConfigUtilities.cs" />
-    <Compile Include="Silk\SilkDoom.cs" />
-    <Compile Include="Silk\SilkDoom.Run.cs" />
-    <Compile Include="Silk\SilkMusic.cs" />
-    <Compile Include="Silk\SilkProgram.cs" />
-    <Compile Include="Silk\SilkSound.cs" />
-    <Compile Include="Silk\SilkUserInput.cs" />
-    <Compile Include="Silk\SilkVideo.cs" />
     <Compile Include="UserInput\ConsoleUserInput.cs" />
     <Compile Include="UserInput\DoomKey.cs" />
     <Compile Include="UserInput\DoomKeyEx.cs" />

@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using ConsoleDoom.DoomEntity.Common;
+using System.IO;
 
 namespace ConsoleDoom
 {

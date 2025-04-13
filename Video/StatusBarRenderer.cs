@@ -1,4 +1,6 @@
-﻿namespace ConsoleDoom.Video
+﻿using ConsoleDoom.DoomEntity.Game;
+
+namespace ConsoleDoom.Video
 {
     public sealed class StatusBarRenderer
     {

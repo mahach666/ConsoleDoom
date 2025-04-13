@@ -1,9 +1,6 @@
-﻿
+﻿using System;
 
-using System;
-using System.Numerics;
-
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Game
 {
     public sealed class Player
     {

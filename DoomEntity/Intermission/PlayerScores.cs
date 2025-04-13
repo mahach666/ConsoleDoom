@@ -1,4 +1,6 @@
-﻿namespace ConsoleDoom
+﻿using ConsoleDoom.DoomEntity.Game;
+
+namespace ConsoleDoom
 {
     public class PlayerScores
     {

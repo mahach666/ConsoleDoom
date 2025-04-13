@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using ConsoleDoom.DoomEntity.Common;
+using ConsoleDoom.DoomEntity.Game;
+using System.Collections.Generic;
 
 namespace ConsoleDoom
 {

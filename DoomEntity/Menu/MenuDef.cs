@@ -1,4 +1,6 @@
-﻿namespace ConsoleDoom
+﻿using ConsoleDoom.DoomEntity.Event;
+
+namespace ConsoleDoom
 {
     public abstract class MenuDef
     {

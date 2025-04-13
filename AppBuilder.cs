@@ -3,6 +3,7 @@ using ConsoleDoom.Video;
 using ConsoleDoom.DoomEntity;
 using System;
 using System.Linq;
+using ConsoleDoom.DoomEntity.Game;
 
 namespace ConsoleDoom
 {

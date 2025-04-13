@@ -1,7 +1,5 @@
-﻿
-
-
-
+﻿using ConsoleDoom.DoomEntity.Common;
+using ConsoleDoom.DoomEntity.Game;
 using System;
 
 namespace ConsoleDoom

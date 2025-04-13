@@ -1,6 +1,4 @@
-﻿
-
-namespace ConsoleDoom
+﻿namespace ConsoleDoom.DoomEntity.Event
 {
     public sealed class DoomEvent
     {

@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Common
 {
     public static class DoomDebug
     {

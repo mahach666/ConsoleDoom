@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using ConsoleDoom.Audio;
 using ConsoleDoom.Video;
 using ConsoleDoom.UserInput;
+using ConsoleDoom.DoomEntity.Event;
+using ConsoleDoom.DoomEntity.Game;
 
 namespace ConsoleDoom.DoomEntity
 {

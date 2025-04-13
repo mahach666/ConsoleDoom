@@ -1,8 +1,4 @@
-﻿
-
-
-
-using System;
+﻿using ConsoleDoom.DoomEntity.Common;
 using System.Collections.Generic;
 
 namespace ConsoleDoom

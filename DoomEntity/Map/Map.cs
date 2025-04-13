@@ -1,9 +1,6 @@
-﻿
-
-
+﻿using ConsoleDoom.DoomEntity.Game;
 using System;
 using System.Collections.Generic;
-using System.Runtime.ExceptionServices;
 
 namespace ConsoleDoom
 {

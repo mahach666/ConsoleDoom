@@ -1,10 +1,6 @@
-﻿
+﻿using System.IO;
 
-
-using System;
-using System.IO;
-
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Game
 {
     public sealed class Demo
     {

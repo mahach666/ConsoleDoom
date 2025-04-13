@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using ConsoleDoom.DoomEntity;
+using ConsoleDoom.DoomEntity.Event;
+using ConsoleDoom.DoomEntity.Game;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace ConsoleDoom

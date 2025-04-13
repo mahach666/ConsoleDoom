@@ -2,6 +2,7 @@
 
 
 
+using ConsoleDoom.DoomEntity.Event;
 using System;
 using System.Collections.Generic;
 

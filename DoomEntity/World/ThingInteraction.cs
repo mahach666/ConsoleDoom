@@ -2,6 +2,7 @@
 
 
 
+using ConsoleDoom.DoomEntity.Game;
 using System;
 
 namespace ConsoleDoom

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using ConsoleDoom.DoomEntity.Event;
+using System.Collections.Generic;
 
 namespace ConsoleDoom
 {
