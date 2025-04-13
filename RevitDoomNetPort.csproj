@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppBuilder.cs" />
     <Compile Include="ApplicationInfo.cs" />
     <Compile Include="Audio\Bgm.cs" />
     <Compile Include="Audio\IMusic.cs" />
@@ -69,7 +70,7 @@
     <Compile Include="Audio\NullSound.cs" />
     <Compile Include="Audio\Sfx.cs" />
     <Compile Include="Audio\SfxType.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="App.cs" />
     <Compile Include="CommandLineArgs.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="ConfigUtilities.cs" />

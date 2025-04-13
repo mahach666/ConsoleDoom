@@ -1,8 +1,4 @@
-﻿
-
-using System;
-
-namespace ManagedDoom
+﻿namespace ManagedDoom
 {
     public sealed class TicCmd
     {

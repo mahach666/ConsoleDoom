@@ -21,7 +21,7 @@ namespace ManagedDoom
 
             if (data[p++] != 109)
             {
-                throw new Exception("Demo is from a different game version!");
+                //throw new Exception("Demo is from a different game version!");
             }
 
             this.data = data;
