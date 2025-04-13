@@ -3,6 +3,7 @@ using ConsoleDoom.DoomEntity.Common;
 using ConsoleDoom.DoomEntity.Event;
 using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Info;
+using ConsoleDoom.UserInput;
 using System;
 using System.Collections.Generic;
 

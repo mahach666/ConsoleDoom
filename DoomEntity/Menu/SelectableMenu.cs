@@ -1,4 +1,5 @@
 ﻿using ConsoleDoom.DoomEntity.Event;
+using ConsoleDoom.UserInput;
 using System.Collections.Generic;
 
 namespace ConsoleDoom.DoomEntity.Menu

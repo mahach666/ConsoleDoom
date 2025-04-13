@@ -2,6 +2,7 @@
 using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.Map;
+using ConsoleDoom.UserInput;
 using System;
 using System.Linq;
 

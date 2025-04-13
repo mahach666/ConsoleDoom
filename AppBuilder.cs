@@ -5,6 +5,7 @@ using System;
 using System.Linq;
 using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.UserInput;
 
 namespace ConsoleDoom
 {

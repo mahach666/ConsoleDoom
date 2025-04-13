@@ -1,6 +1,7 @@
 ﻿using ConsoleDoom.DoomEntity.Event;
 using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Info;
+using ConsoleDoom.UserInput;
 
 namespace ConsoleDoom.DoomEntity.Menu
 {

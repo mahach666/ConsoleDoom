@@ -1,5 +1,6 @@
 ﻿using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.Wad;
+using ConsoleDoom.Extensions;
 using System;
 using System.Collections;
 using System.Collections.Generic;

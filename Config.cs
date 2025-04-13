@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleDoom.UserInput;
+using System;
 using System.Collections.Generic;
 using System.IO;
 

@@ -1,6 +1,7 @@
 ﻿using ConsoleDoom.DoomEntity;
 using ConsoleDoom.DoomEntity.Event;
 using ConsoleDoom.DoomEntity.Game;
+using ConsoleDoom.UserInput;
 using System.Collections.Generic;
 using System.Linq;
 

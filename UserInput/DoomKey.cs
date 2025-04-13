@@ -1,4 +1,4 @@
-﻿namespace ConsoleDoom
+﻿namespace ConsoleDoom.UserInput
 {
     public enum DoomKey
     {

@@ -3,6 +3,7 @@ using ConsoleDoom.DoomEntity.Event;
 using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.UserInput;
 
 namespace ConsoleDoom.DoomEntity.World
 {

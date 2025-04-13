@@ -2,6 +2,7 @@
 using ConsoleDoom.DoomEntity.Info;
 using ConsoleDoom.DoomEntity.Map;
 using ConsoleDoom.DoomEntity.MathUtils;
+using ConsoleDoom.UserInput;
 using System.Collections.Generic;
 
 namespace ConsoleDoom.DoomEntity.World

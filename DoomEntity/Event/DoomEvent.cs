@@ -1,4 +1,6 @@
-﻿namespace ConsoleDoom.DoomEntity.Event
+﻿using ConsoleDoom.UserInput;
+
+namespace ConsoleDoom.DoomEntity.Event
 {
     public sealed class DoomEvent
     {
