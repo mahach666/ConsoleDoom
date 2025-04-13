@@ -1,11 +1,7 @@
-﻿
-
-
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Graphics
 {
     public sealed class Patch
     {
@@ -90,7 +86,7 @@ namespace ConsoleDoom
                     }
                     var length = data[p + 1];
                     var offset = p + 3;
-                    need = Math.Max(offset + 128, need);
+                    need = System.Math.Max(offset + 128, need);
                     p += length + 4;
                 }
             }

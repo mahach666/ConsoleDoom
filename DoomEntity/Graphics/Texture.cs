@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Graphics
 {
     public sealed class Texture
     {
@@ -71,8 +71,8 @@ namespace ConsoleDoom
                 var left = patch.OriginX;
                 var right = left + patch.Width;
 
-                var start = Math.Max(left, 0);
-                var end = Math.Min(right, width);
+                var start = System.Math.Max(left, 0);
+                var end = System.Math.Min(right, width);
 
                 for (var x = start; x < end; x++)
                 {
@@ -85,7 +85,7 @@ namespace ConsoleDoom
                 }
             }
 
-            var padding = Math.Max(128 - height, 0);
+            var padding = System.Math.Max(128 - height, 0);
             var data = new byte[height * compositeColumnCount + padding];
             var i = 0;
             for (var x = 0; x < width; x++)

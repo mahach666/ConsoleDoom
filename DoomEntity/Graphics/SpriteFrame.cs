@@ -1,10 +1,4 @@
-﻿
-
-
-
-using System;
-
-namespace ConsoleDoom
+﻿namespace ConsoleDoom.DoomEntity.Graphics
 {
     public sealed class SpriteFrame
     {

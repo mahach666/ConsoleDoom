@@ -1,11 +1,6 @@
-﻿
+﻿using System.Collections.Generic;
 
-
-
-using System;
-using System.Collections.Generic;
-
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Graphics
 {
     public sealed class PatchCache
     {

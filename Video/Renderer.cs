@@ -4,6 +4,7 @@
 
 using ConsoleDoom.DoomEntity;
 using ConsoleDoom.DoomEntity.Game;
+using ConsoleDoom.DoomEntity.Graphics;
 using System;
 using System.Runtime.InteropServices;
 

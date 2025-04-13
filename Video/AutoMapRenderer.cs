@@ -1,4 +1,5 @@
 ﻿using ConsoleDoom.DoomEntity.Game;
+using ConsoleDoom.DoomEntity.Graphics;
 using System;
 
 namespace ConsoleDoom.Video

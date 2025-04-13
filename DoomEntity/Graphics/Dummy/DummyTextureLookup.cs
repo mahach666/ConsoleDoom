@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Graphics.Dummy
 {
     public class DummyTextureLookup : ITextureLookup
     {

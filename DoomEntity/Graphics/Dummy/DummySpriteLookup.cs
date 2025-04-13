@@ -1,10 +1,7 @@
-﻿
-
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Graphics.Dummy
 {
     public sealed class DummySpriteLookup : ISpriteLookup
     {

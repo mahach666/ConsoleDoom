@@ -1,4 +1,6 @@
-﻿namespace ConsoleDoom.Video
+﻿using ConsoleDoom.DoomEntity.Graphics;
+
+namespace ConsoleDoom.Video
 {
     public class OpeningSequenceRenderer
     {

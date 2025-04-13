@@ -1,10 +1,4 @@
-﻿
-
-
-
-using System;
-
-namespace ConsoleDoom
+﻿namespace ConsoleDoom
 {
     public sealed class TextureAnimationInfo
     {

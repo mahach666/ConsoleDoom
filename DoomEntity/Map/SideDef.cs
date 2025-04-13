@@ -1,4 +1,5 @@
 ﻿using ConsoleDoom.DoomEntity.Common;
+using ConsoleDoom.DoomEntity.Graphics;
 using System;
 
 namespace ConsoleDoom

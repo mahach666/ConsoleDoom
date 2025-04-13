@@ -1,11 +1,6 @@
-﻿
+﻿using System;
 
-
-
-using System;
-using System.Runtime.ExceptionServices;
-
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Graphics
 {
     public sealed class Palette
     {
@@ -58,9 +53,9 @@ namespace ConsoleDoom
                     var g = data[colorOffset + 1];
                     var b = data[colorOffset + 2];
 
-                    r = (byte)Math.Round(255 * CorrectionCurve(r / 255.0, p));
-                    g = (byte)Math.Round(255 * CorrectionCurve(g / 255.0, p));
-                    b = (byte)Math.Round(255 * CorrectionCurve(b / 255.0, p));
+                    r = (byte)System.Math.Round(255 * CorrectionCurve(r / 255.0, p));
+                    g = (byte)System.Math.Round(255 * CorrectionCurve(g / 255.0, p));
+                    b = (byte)System.Math.Round(255 * CorrectionCurve(b / 255.0, p));
 
                     palettes[i][j] = (uint)((r << 0) | (g << 8) | (b << 16) | (255 << 24));
                 }
@@ -69,7 +64,7 @@ namespace ConsoleDoom
 
         private static double CorrectionCurve(double x, double p)
         {
-            return Math.Pow(x, p);
+            return System.Math.Pow(x, p);
         }
 
         public uint[] this[int paletteNumber]

@@ -1,12 +1,7 @@
-﻿
-
-
-
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Runtime.ExceptionServices;
 
-namespace ConsoleDoom
+namespace ConsoleDoom.DoomEntity.Graphics
 {
     public sealed class SpriteLookup : ISpriteLookup
     {

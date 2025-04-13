@@ -1,11 +1,4 @@
-﻿
-
-
-
-using System;
-using System.Collections.Generic;
-
-namespace ConsoleDoom
+﻿namespace ConsoleDoom.DoomEntity.Graphics
 {
     public interface ISpriteLookup
     {

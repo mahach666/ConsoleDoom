@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ConsoleDoom.DoomEntity.Graphics;
+using ConsoleDoom.DoomEntity.Graphics.Dummy;
+using System;
 
 namespace ConsoleDoom.DoomEntity.Game
 {

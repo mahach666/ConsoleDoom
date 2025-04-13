@@ -3,6 +3,7 @@
 
 
 using ConsoleDoom.DoomEntity.Game;
+using ConsoleDoom.DoomEntity.Graphics;
 using System;
 using System.Collections.Generic;
 
