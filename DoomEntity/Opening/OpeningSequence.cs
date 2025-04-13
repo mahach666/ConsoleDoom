@@ -1,4 +1,5 @@
-﻿using ConsoleDoom.DoomEntity.Game;
+﻿using ConsoleDoom.Audio;
+using ConsoleDoom.DoomEntity.Game;
 
 namespace ConsoleDoom.DoomEntity.Opening
 {

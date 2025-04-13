@@ -1,4 +1,5 @@
-﻿using ConsoleDoom.DoomEntity;
+﻿using ConsoleDoom.Audio;
+using ConsoleDoom.DoomEntity;
 using ConsoleDoom.DoomEntity.Event;
 using ConsoleDoom.DoomEntity.Game;
 using ConsoleDoom.UserInput;
