@@ -1,7 +1,7 @@
 ﻿
 namespace ConsoleDoom.DoomEntity.MathUtils
 {
-    internal static class Utils
+    internal static class NetFunc
     {
         public static int Clamp(int value, int min, int max)
         {

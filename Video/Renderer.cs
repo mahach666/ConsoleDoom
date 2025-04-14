@@ -66,8 +66,8 @@ namespace ConsoleDoom.Video
                 //screen = new DrawScreen(content.Wad, 160, 100);
             }
 
-            config.video_gamescreensize = ConsoleDoom.DoomEntity.MathUtils.Utils.Clamp(config.video_gamescreensize, 0, MaxWindowSize);
-            config.video_gammacorrection = ConsoleDoom.DoomEntity.MathUtils.Utils.Clamp(config.video_gammacorrection, 0, MaxGammaCorrectionLevel);
+            config.video_gamescreensize = ConsoleDoom.DoomEntity.MathUtils.NetFunc.Clamp(config.video_gamescreensize, 0, MaxWindowSize);
+            config.video_gammacorrection = ConsoleDoom.DoomEntity.MathUtils.NetFunc.Clamp(config.video_gammacorrection, 0, MaxGammaCorrectionLevel);
 
             menu = new MenuRenderer(content.Wad, screen);
             threeD = new ThreeDRenderer(content, screen, config.video_gamescreensize);
@@ -227,7 +227,7 @@ namespace ConsoleDoom.Video
                 var dy = (float)(y2 - y1) / wipeBandWidth;
                 for (var x = x1; x < x2; x++)
                 {
-                    var y = (int)ConsoleDoom.DoomEntity.MathUtils.Utils.RoundF(y1 + dy * ((x - x1) / 2 * 2));
+                    var y = (int)ConsoleDoom.DoomEntity.MathUtils.NetFunc.RoundF(y1 + dy * ((x - x1) / 2 * 2));
                     var copyLength = screen.Height - y;
                     if (copyLength > 0)
                     {

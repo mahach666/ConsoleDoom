@@ -71,9 +71,9 @@
     <Compile Include="Audio\Sfx.cs" />
     <Compile Include="Audio\SfxType.cs" />
     <Compile Include="App.cs" />
-    <Compile Include="CommandLineArgs.cs" />
+    <Compile Include="Utils\CommandLineArgs.cs" />
     <Compile Include="Config.cs" />
-    <Compile Include="ConfigUtilities.cs" />
+    <Compile Include="Utils\ConfigUtilities.cs" />
     <Compile Include="DoomEntity\Common\DoomDebug.cs" />
     <Compile Include="DoomEntity\Common\DoomInterop.cs" />
     <Compile Include="DoomEntity\Common\DoomRandom.cs" />
@@ -170,7 +170,7 @@
     <Compile Include="DoomEntity\MathUtils\Geometry.cs" />
     <Compile Include="DoomEntity\MathUtils\Trig.cs" />
     <Compile Include="DoomEntity\MathUtils\Trig.Tables.cs" />
-    <Compile Include="DoomEntity\MathUtils\Utils.cs" />
+    <Compile Include="DoomEntity\MathUtils\NetFunc.cs" />
     <Compile Include="DoomEntity\Menu\DoomMenu.cs" />
     <Compile Include="DoomEntity\Menu\HelpScreen.cs" />
     <Compile Include="DoomEntity\Menu\LoadMenu.cs" />

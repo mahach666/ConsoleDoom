@@ -446,10 +446,10 @@ namespace ConsoleDoom.Video
 
             if (accept)
             {
-                var bx1 = ConsoleDoom.DoomEntity.MathUtils.Utils.Clamp((int)x1, 0, width - 1);
-                var by1 = ConsoleDoom.DoomEntity.MathUtils.Utils.Clamp((int)y1, 0, height - 1);
-                var bx2 = ConsoleDoom.DoomEntity.MathUtils.Utils.Clamp((int)x2, 0, width - 1);
-                var by2 = ConsoleDoom.DoomEntity.MathUtils.Utils.Clamp((int)y2, 0, height - 1);
+                var bx1 = ConsoleDoom.DoomEntity.MathUtils.NetFunc.Clamp((int)x1, 0, width - 1);
+                var by1 = ConsoleDoom.DoomEntity.MathUtils.NetFunc.Clamp((int)y1, 0, height - 1);
+                var bx2 = ConsoleDoom.DoomEntity.MathUtils.NetFunc.Clamp((int)x2, 0, width - 1);
+                var by2 = ConsoleDoom.DoomEntity.MathUtils.NetFunc.Clamp((int)y2, 0, height - 1);
                 Bresenham(bx1, by1, bx2, by2, color);
             }
         }
