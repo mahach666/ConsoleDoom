@@ -9,7 +9,7 @@ using DoomNetFrameworkEngine.Video;
 using System;
 using System.Linq;
 
-namespace RevitDoomNetPort
+namespace ConsoleDoom
 {
     public class DoomApp
     {

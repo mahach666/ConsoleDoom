@@ -1,7 +1,7 @@
 ﻿using System.Windows.Forms;
 using Application = System.Windows.Forms.Application;
 
-namespace RevitDoomNetPort.Utils
+namespace ConsoleDoom.Utils
 {
     internal static class UserSelect
     {
