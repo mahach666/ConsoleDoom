@@ -29,12 +29,12 @@ namespace ConsoleDoom.Video
             Console.Write("\x1b[0m");
         }
 
-        public static void PrintBGRAFast(byte[] buffer, int width, int height,int scale =1)
+        public static void PrintBGRAFast(byte[] buffer, int width, int height,uint scale =1)
         {
             var sb = new StringBuilder(height * width * 10);
-            for (int y = 0; y < height; y+= scale)
+            for (int y = 0; y < height; y+= (int)scale)
             {
-                for (int x = 0; x < width; x+= scale)
+                for (int x = 0; x < width; x+= (int)scale)
                 {
                     int i = (x * height + y) * 4;
                     byte r = buffer[i + 0];

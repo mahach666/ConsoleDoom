@@ -8,7 +8,7 @@ namespace ConsoleDoom
         private string _iwadPath = "DOOM1.WAD";
         private bool _highResolution = false;
         private string[] _extraArgs = Array.Empty<string>();
-
+        private uint _scale = 1;
         public AppBuilder SetIwad(string path)
         {
             _iwadPath = path;
@@ -26,6 +26,11 @@ namespace ConsoleDoom
             _extraArgs = args;
             return this;
         }
+        public AppBuilder WithScale(uint scale)
+        {
+            _scale = scale;
+            return this;
+        }
 
         public DoomApp Build()
         {
@@ -33,7 +38,8 @@ namespace ConsoleDoom
             {
                 IwadPath = _iwadPath,
                 HighResolution = _highResolution,
-                ExtraArgs = _extraArgs
+                ExtraArgs = _extraArgs,
+                Scale = _scale                
             };
         }
     }

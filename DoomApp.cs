@@ -15,6 +15,7 @@ namespace RevitDoomNetPort
         public string IwadPath;
         public bool HighResolution;
         public string[] ExtraArgs;
+        public uint Scale;
 
         public void Run()
         {
@@ -59,7 +60,7 @@ namespace RevitDoomNetPort
 
                     doom.Update();
                     renderer.Render(doom, buffer, Fixed.Zero);
-                    AnsiRenderer.PrintBGRAFast(buffer, width, height, 1);
+                    AnsiRenderer.PrintBGRAFast(buffer, width, height, Scale);
                 }
             }
             catch (Exception e)
