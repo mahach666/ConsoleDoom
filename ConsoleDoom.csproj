@@ -64,7 +64,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppBuilder.cs" />
-    <Compile Include="ApplicationInfo.cs" />
     <Compile Include="Audio\Bgm.cs" />
     <Compile Include="Audio\IMusic.cs" />
     <Compile Include="Audio\ISound.cs" />
