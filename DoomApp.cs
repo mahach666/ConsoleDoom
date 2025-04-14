@@ -66,7 +66,7 @@ namespace RevitDoomNetPort
             }
             catch (Exception e)
             {
-                Console.WriteLine("Ошибка: " + e);
+                Console.WriteLine("Error: " + e);
             }
         }
     }

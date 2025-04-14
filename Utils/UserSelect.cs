@@ -10,8 +10,8 @@ namespace RevitDoomNetPort.Utils
             Application.EnableVisualStyles();
 
             OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Title = "Выберите WAD-файл";
-            dialog.Filter = "WAD файлы (*.wad)|*.wad|Все файлы (*.*)|*.*";
+            dialog.Title = "Select WAD-файл";
+            dialog.Filter = "WAD files (*.wad)|*.wad|All files (*.*)|*.*";
 
             if (dialog.ShowDialog() == DialogResult.OK)
             {
