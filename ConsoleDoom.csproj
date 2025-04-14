@@ -71,6 +71,7 @@
     <Compile Include="Audio\Sfx.cs" />
     <Compile Include="Audio\SfxType.cs" />
     <Compile Include="App.cs" />
+    <Compile Include="DoomApp.cs" />
     <Compile Include="Utils\CommandLineArgs.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Utils\ConfigUtilities.cs" />
