@@ -1,6 +1,8 @@
-﻿using ConsoleDoom.DoomEntity.Event;
-using ConsoleDoom.DoomEntity.Game;
-using ConsoleDoom.DoomEntity.World;
+﻿using DoomNetFrameworkEngine;
+using DoomNetFrameworkEngine.DoomEntity.Event;
+using DoomNetFrameworkEngine.DoomEntity.Game;
+using DoomNetFrameworkEngine.DoomEntity.World;
+using DoomNetFrameworkEngine.UserInput;
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
@@ -23,16 +25,6 @@ namespace ConsoleDoom.UserInput
         }
 
         private static bool IsKeyDown(ConsoleKey key) => (GetAsyncKeyState((int)key) & 0x8000) != 0;
-
-        private bool IsPressed(KeyBinding binding)
-        {
-            foreach (var key in binding.Keys)
-            {
-                if (IsKeyDown((ConsoleKey)key))
-                    return true;
-            }
-            return false;
-        }
 
         public void PostEvent(DoomEvent e) { }
 

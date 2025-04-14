@@ -1,10 +1,11 @@
-﻿using ConsoleDoom;
-using ConsoleDoom.DoomEntity;
-using ConsoleDoom.DoomEntity.Game;
-using ConsoleDoom.DoomEntity.MathUtils;
-using ConsoleDoom.UserInput;
+﻿using ConsoleDoom.UserInput;
 using ConsoleDoom.Utils;
 using ConsoleDoom.Video;
+using DoomNetFrameworkEngine;
+using DoomNetFrameworkEngine.DoomEntity;
+using DoomNetFrameworkEngine.DoomEntity.Game;
+using DoomNetFrameworkEngine.DoomEntity.MathUtils;
+using DoomNetFrameworkEngine.Video;
 using System;
 using System.Linq;
 
